@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import {
   Globe,
   Zap,
@@ -29,6 +29,7 @@ function AppleLogo({ className }) {
   );
 }
 import { useI18n } from '../hooks/useI18n';
+import { useScrollHide } from '../hooks/useScrollHide';
 import { LangDropdown } from '../components/LangDropdown';
 
 // Benchmark data
@@ -132,6 +133,7 @@ function SectionHeader({ icon: Icon, kicker, title, subtitle }) {
 export function UniTextPage() {
   const { t, locale, setLocale, status } = useI18n();
   const [activeDemo, setActiveDemo] = useState('arabic');
+  const headerHidden = useScrollHide({ mobileOnly: true, mobileBreakpoint: 768 });
 
   // Demo text samples
   const demoTexts = {
@@ -145,7 +147,7 @@ export function UniTextPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#0a0a12] via-[#12121f] to-[#0a0a12] text-white">
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-black/30 border-b border-white/10">
+      <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-black/30 border-b border-white/10 transition-transform duration-300 ${headerHidden ? '-translate-y-full' : 'translate-y-0'}`}>
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-accent)] to-orange-600 flex items-center justify-center font-bold text-black">
