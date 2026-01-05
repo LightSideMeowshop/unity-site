@@ -272,8 +272,8 @@ export function UniTextPage() {
           <div className="mt-2 text-white/70">{t('problem.users_affected')}</div>
           <div className="mt-4 flex flex-wrap justify-center gap-4">
             {SCRIPTS.map((script) => (
-              <div key={script.name} className="px-4 py-2 rounded-xl bg-white/5 border border-white/10">
-                <span className="font-medium">{script.native}</span>
+              <div key={script.name} className="px-4 py-2 rounded-xl bg-white/5 border border-white/10" dir="ltr">
+                <bdi className="font-medium">{script.native}</bdi>
                 <span className="text-white/50 ml-2 text-sm">{script.users}</span>
               </div>
             ))}
