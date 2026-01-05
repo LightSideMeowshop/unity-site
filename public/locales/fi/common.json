@@ -45,8 +45,8 @@
   },
   "benchmarks": {
     "kicker": "Suorituskyky",
-    "title": "3-14× nopeampi kuin TMP",
-    "subtitle": "Todelliset suorituskykytestit Androidilla. 100 objektia, 1000+ merkkiä kukin.",
+    "title": "Benchmark-vertailu",
+    "subtitle": "Todelliset suorituskykytestit Android-tuotantobuildilla.",
     "speed": "Nopeusvertailu",
     "memory": "Muisti ja GC",
     "creation": "Objektien luonti",
@@ -54,11 +54,11 @@
     "layoutAuto": "Layout (AutoSize)",
     "mesh": "Mesh rebuild",
     "faster": "nopeampi",
-    "gc_cycles": "GC-sykliä (100 objektin luonti)",
+    "gc_cycles": "GC-sykliä (luonti)",
     "fewer_gc": "vähemmän GC-syklejä",
-    "memory_usage": "Muistin käyttö",
+    "memory_usage": "Muistin varaus (luonti)",
     "less_memory": "vähemmän muistia",
-    "note": "* Suorituskykytestit: Android-tuotantobuild, 100 tekstiobjektia, 1000 merkkiä kukin"
+    "note": "* 100 objektia, 10 iteraatiota, 3 warmup, ~2300 merkkiä per objekti (Lorem ipsum + Arabia + Heprea + Sekoitettu). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Yhteensopivuus",
@@ -73,10 +73,10 @@
   },
   "comparison": {
     "kicker": "Vertailu",
-    "title": "UniText vs TextMesh Pro",
+    "title": "UniText vs TMP vs UI Toolkit",
     "subtitle": "Ominaisuuksien vertailu vierekkäin",
     "feature": "Ominaisuus",
-    "status": { "full": "Täysi tuki", "limited": "Rajoitettu", "basic": "Perus", "plugin": "Vaatii pluginin", "none": "Ei tuettu" },
+    "status": { "full": "Täysi tuki", "limited": "Rajoitettu *", "basic": "Perus", "plugin": "Vaatii pluginin", "none": "Ei tuettu" },
     "features": {
       "bidi": "BiDi-algoritmi (UAX #9)",
       "arabic": "Arabian muotoilu",
@@ -86,7 +86,8 @@
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
       "parallel": "Rinnakkaiskäsittely"
-    }
+    },
+    "footnote_uitk": "* UI Toolkit: vaatii Unity 6+ ja Advanced Text Generator käytössä"
   },
   "footer": { "rights": "Kaikki oikeudet pidätetään.", "privacy": "Tietosuoja" }
 }

@@ -45,8 +45,8 @@
   },
   "benchmarks": {
     "kicker": "Performans",
-    "title": "TMP'den 3-14× daha hızlı",
-    "subtitle": "Android'de gerçek kıyaslamalar. 100 nesne, her biri 1000+ karakter.",
+    "title": "Benchmark Karşılaştırması",
+    "subtitle": "Android üretim buildinde gerçek kıyaslamalar.",
     "speed": "Hız karşılaştırması",
     "memory": "Bellek ve GC",
     "creation": "Nesne oluşturma",
@@ -54,11 +54,11 @@
     "layoutAuto": "Düzen (AutoSize)",
     "mesh": "Mesh yeniden oluşturma",
     "faster": "daha hızlı",
-    "gc_cycles": "GC döngüsü (100 nesne oluşturma)",
+    "gc_cycles": "GC döngüsü (oluşturma)",
     "fewer_gc": "daha az GC döngüsü",
-    "memory_usage": "Bellek kullanımı",
+    "memory_usage": "Bellek tahsisi (oluşturma)",
     "less_memory": "daha az bellek",
-    "note": "* Kıyaslamalar: Android üretim yapısı, 100 metin nesnesi, her biri 1000 karakter"
+    "note": "* 100 nesne, 10 iterasyon, 3 warmup, nesne başına ~2300 karakter (Lorem ipsum + Arapça + İbranice + Karışık). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Uyumluluk",
@@ -73,10 +73,10 @@
   },
   "comparison": {
     "kicker": "Karşılaştırma",
-    "title": "UniText vs TextMesh Pro",
+    "title": "UniText vs TMP vs UI Toolkit",
     "subtitle": "Yan yana özellik karşılaştırması",
     "feature": "Özellik",
-    "status": { "full": "Tam destek", "limited": "Sınırlı", "basic": "Temel", "plugin": "Eklenti gerekli", "none": "Desteklenmiyor" },
+    "status": { "full": "Tam destek", "limited": "Sınırlı *", "basic": "Temel", "plugin": "Eklenti gerekli", "none": "Desteklenmiyor" },
     "features": {
       "bidi": "BiDi Algoritması (UAX #9)",
       "arabic": "Arapça şekillendirme",
@@ -86,7 +86,8 @@
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
       "parallel": "Paralel işleme"
-    }
+    },
+    "footnote_uitk": "* UI Toolkit: Advanced Text Generator etkinleştirilmiş Unity 6+ gerektirir"
   },
   "footer": { "rights": "Tüm hakları saklıdır.", "privacy": "Gizlilik" }
 }

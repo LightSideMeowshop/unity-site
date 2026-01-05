@@ -32,17 +32,18 @@ import { useI18n } from '../hooks/useI18n';
 import { useScrollHide } from '../hooks/useScrollHide';
 import { LangDropdown } from '../components/LangDropdown';
 
-// Benchmark data
+// Benchmark data (100 objects)
 const BENCHMARKS = {
-  creation: { unitext: 217, tmp: 579, label: 'Object Creation (100 objects)' },
-  rebuild: { unitext: 83, tmp: 288, label: 'Full Rebuild' },
-  layoutAuto: { unitext: 67, tmp: 842, label: 'Layout (AutoSize ON)' },
-  mesh: { unitext: 25, tmp: 150, label: 'Mesh Rebuild' },
+  creation: { unitext: 217, tmp: 579, uitk: 458 },
+  rebuild: { unitext: 83, tmp: 288, uitk: 75 },
+  layoutAuto: { unitext: 67, tmp: 842, uitk: 50 },
+  mesh: { unitext: 25, tmp: 150, uitk: 25 },
 };
 
 const GC_DATA = {
   unitext: { cycles: 2, memory: 298 },
   tmp: { cycles: 46, memory: 618 },
+  uitk: { cycles: 54, memory: 1219 },
 };
 
 // Unicode compliance data
@@ -54,15 +55,17 @@ const UNICODE_TESTS = [
 ];
 
 // Feature comparison
+// UI Toolkit: Unity 6+ has Advanced Text Generator with HarfBuzz/ICU
+// But still has massive memory allocations (1.2GB for 100 objects)
 const FEATURES = [
-  { key: 'bidi', unitext: 'full', tmp: 'basic' },
-  { key: 'arabic', unitext: 'full', tmp: 'plugin' },
-  { key: 'hebrew', unitext: 'full', tmp: 'plugin' },
-  { key: 'hindi', unitext: 'full', tmp: 'limited' },
-  { key: 'emoji', unitext: 'full', tmp: 'limited' },
-  { key: 'zwj', unitext: 'full', tmp: 'none' },
-  { key: 'zeroalloc', unitext: 'full', tmp: 'none' },
-  { key: 'parallel', unitext: 'full', tmp: 'none' },
+  { key: 'bidi', unitext: 'full', tmp: 'basic', uitk: 'limited' },      // Unity 6+ only
+  { key: 'arabic', unitext: 'full', tmp: 'plugin', uitk: 'limited' },   // Unity 6+ only
+  { key: 'hebrew', unitext: 'full', tmp: 'plugin', uitk: 'limited' },   // Unity 6+ only
+  { key: 'hindi', unitext: 'full', tmp: 'limited', uitk: 'limited' },   // Unity 6+ only
+  { key: 'emoji', unitext: 'full', tmp: 'limited', uitk: 'full' },      // Works well
+  { key: 'zwj', unitext: 'full', tmp: 'none', uitk: 'limited' },        // Unity 6+ only
+  { key: 'zeroalloc', unitext: 'full', tmp: 'none', uitk: 'none' },     // 1.2GB allocations
+  { key: 'parallel', unitext: 'full', tmp: 'none', uitk: 'none' },      // Not supported
 ];
 
 // Platforms
@@ -93,7 +96,12 @@ function StatusIcon({ status }) {
 
 function BenchmarkBar({ value, max, color = 'accent' }) {
   const percentage = Math.min((value / max) * 100, 100);
-  const bgColor = color === 'accent' ? 'bg-[var(--color-accent)]' : 'bg-red-500/70';
+  const colorMap = {
+    accent: 'bg-[var(--color-accent)]',
+    red: 'bg-red-500/70',
+    purple: 'bg-purple-500/70',
+  };
+  const bgColor = colorMap[color] || colorMap.accent;
 
   return (
     <div className="h-3 bg-white/10 rounded-full overflow-hidden">
@@ -327,32 +335,39 @@ export function UniTextPage() {
               {t('benchmarks.speed')}
             </h3>
             <div className="space-y-6">
-              {Object.entries(BENCHMARKS).map(([key, data]) => (
-                <div key={key}>
-                  <div className="flex justify-between text-sm mb-2">
-                    <span>{t(`benchmarks.${key}`)}</span>
-                    <span className="text-[var(--color-accent)] font-mono">
-                      {Math.round(data.tmp / data.unitext)}× {t('benchmarks.faster')}
-                    </span>
-                  </div>
-                  <div className="space-y-1">
-                    <div className="flex items-center gap-3">
-                      <span className="w-16 text-xs text-white/50">UniText</span>
-                      <div className="flex-1">
-                        <BenchmarkBar value={data.unitext} max={data.tmp} color="accent" />
-                      </div>
-                      <span className="w-16 text-right text-xs font-mono">{data.unitext}ms</span>
+              {Object.entries(BENCHMARKS).map(([key, data]) => {
+                const maxVal = Math.max(data.tmp, data.uitk);
+                return (
+                  <div key={key}>
+                    <div className="flex justify-between text-sm mb-2">
+                      <span>{t(`benchmarks.${key}`)}</span>
                     </div>
-                    <div className="flex items-center gap-3">
-                      <span className="w-16 text-xs text-white/50">TMP</span>
-                      <div className="flex-1">
-                        <BenchmarkBar value={data.tmp} max={data.tmp} color="red" />
+                    <div className="space-y-1">
+                      <div className="flex items-center gap-3">
+                        <span className="w-20 text-xs text-white/50">UniText</span>
+                        <div className="flex-1">
+                          <BenchmarkBar value={data.unitext} max={maxVal} color="accent" />
+                        </div>
+                        <span className="w-16 text-right text-xs font-mono">{data.unitext}ms</span>
                       </div>
-                      <span className="w-16 text-right text-xs font-mono">{data.tmp}ms</span>
+                      <div className="flex items-center gap-3">
+                        <span className="w-20 text-xs text-white/50">TMP</span>
+                        <div className="flex-1">
+                          <BenchmarkBar value={data.tmp} max={maxVal} color="red" />
+                        </div>
+                        <span className="w-16 text-right text-xs font-mono">{data.tmp}ms</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="w-20 text-xs text-white/50">UI Toolkit</span>
+                        <div className="flex-1">
+                          <BenchmarkBar value={data.uitk} max={maxVal} color="purple" />
+                        </div>
+                        <span className="w-16 text-right text-xs font-mono">{data.uitk}ms</span>
+                      </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                );
+              })}
             </div>
           </div>
 
@@ -367,36 +382,38 @@ export function UniTextPage() {
               {/* GC Cycles */}
               <div>
                 <div className="text-sm mb-3">{t('benchmarks.gc_cycles')}</div>
-                <div className="flex gap-4">
+                <div className="flex gap-3">
                   <div className="flex-1 p-4 rounded-xl bg-green-500/10 border border-green-500/30 text-center">
-                    <div className="text-3xl font-bold text-green-400">{GC_DATA.unitext.cycles}</div>
+                    <div className="text-2xl font-bold text-green-400">{GC_DATA.unitext.cycles}</div>
                     <div className="text-xs text-white/50 mt-1">UniText</div>
                   </div>
                   <div className="flex-1 p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-center">
-                    <div className="text-3xl font-bold text-red-400">{GC_DATA.tmp.cycles}</div>
+                    <div className="text-2xl font-bold text-red-400">{GC_DATA.tmp.cycles}</div>
                     <div className="text-xs text-white/50 mt-1">TMP</div>
                   </div>
-                </div>
-                <div className="mt-2 text-center text-sm text-[var(--color-accent)]">
-                  {Math.round(GC_DATA.tmp.cycles / GC_DATA.unitext.cycles)}× {t('benchmarks.fewer_gc')}
+                  <div className="flex-1 p-4 rounded-xl bg-purple-500/10 border border-purple-500/30 text-center">
+                    <div className="text-2xl font-bold text-purple-400">{GC_DATA.uitk.cycles}</div>
+                    <div className="text-xs text-white/50 mt-1">UI Toolkit</div>
+                  </div>
                 </div>
               </div>
 
               {/* Memory Usage */}
               <div>
                 <div className="text-sm mb-3">{t('benchmarks.memory_usage')}</div>
-                <div className="flex gap-4">
+                <div className="flex gap-3">
                   <div className="flex-1 p-4 rounded-xl bg-green-500/10 border border-green-500/30 text-center">
-                    <div className="text-3xl font-bold text-green-400">{GC_DATA.unitext.memory}</div>
-                    <div className="text-xs text-white/50 mt-1">MB (UniText)</div>
+                    <div className="text-2xl font-bold text-green-400">{GC_DATA.unitext.memory}</div>
+                    <div className="text-xs text-white/50 mt-1">MB</div>
                   </div>
                   <div className="flex-1 p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-center">
-                    <div className="text-3xl font-bold text-red-400">{GC_DATA.tmp.memory}</div>
-                    <div className="text-xs text-white/50 mt-1">MB (TMP)</div>
+                    <div className="text-2xl font-bold text-red-400">{GC_DATA.tmp.memory}</div>
+                    <div className="text-xs text-white/50 mt-1">MB</div>
                   </div>
-                </div>
-                <div className="mt-2 text-center text-sm text-[var(--color-accent)]">
-                  {Math.round((GC_DATA.tmp.memory / GC_DATA.unitext.memory) * 10) / 10}× {t('benchmarks.less_memory')}
+                  <div className="flex-1 p-4 rounded-xl bg-purple-500/10 border border-purple-500/30 text-center">
+                    <div className="text-2xl font-bold text-purple-400">{GC_DATA.uitk.memory}</div>
+                    <div className="text-xs text-white/50 mt-1">MB</div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -482,6 +499,7 @@ export function UniTextPage() {
                   <span className="text-[var(--color-accent)] font-bold">UniText</span>
                 </th>
                 <th className="py-4 px-4 text-center">TextMesh Pro</th>
+                <th className="py-4 px-4 text-center">UI Toolkit</th>
               </tr>
             </thead>
             <tbody>
@@ -500,11 +518,21 @@ export function UniTextPage() {
                       <span className="text-sm text-white/70">{t(`comparison.status.${feature.tmp}`)}</span>
                     </div>
                   </td>
+                  <td className="py-4 px-4 text-center">
+                    <div className="flex items-center justify-center gap-2">
+                      <StatusIcon status={feature.uitk} />
+                      <span className="text-sm text-white/70">{t(`comparison.status.${feature.uitk}`)}</span>
+                    </div>
+                  </td>
                 </tr>
               ))}
             </tbody>
           </table>
         </div>
+
+        <p className="mt-4 text-center text-sm text-white/50">
+          {t('comparison.footnote_uitk')}
+        </p>
       </Section>
 
       {/* CTA */}

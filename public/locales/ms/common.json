@@ -45,8 +45,8 @@
   },
   "benchmarks": {
     "kicker": "Prestasi",
-    "title": "3-14× lebih pantas daripada TMP",
-    "subtitle": "Penanda aras sebenar di Android. 100 objek, setiap satu 1000+ aksara.",
+    "title": "Perbandingan Penanda Aras",
+    "subtitle": "Penanda aras sebenar pada build pengeluaran Android.",
     "speed": "Perbandingan kelajuan",
     "memory": "Memori & GC",
     "creation": "Penciptaan objek",
@@ -54,11 +54,11 @@
     "layoutAuto": "Layout (AutoSize)",
     "mesh": "Rebuild mesh",
     "faster": "lebih pantas",
-    "gc_cycles": "Kitaran GC (penciptaan 100 objek)",
+    "gc_cycles": "Kitaran GC (penciptaan)",
     "fewer_gc": "kurang kitaran GC",
-    "memory_usage": "Penggunaan memori",
+    "memory_usage": "Peruntukan memori (penciptaan)",
     "less_memory": "kurang memori",
-    "note": "* Penanda aras: Build pengeluaran Android, 100 objek teks, setiap satu 1000 aksara"
+    "note": "* 100 objek, 10 iterasi, 3 warmup, ~2300 aksara setiap objek (Lorem ipsum + Arab + Ibrani + Campuran). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Pematuhan",
@@ -73,10 +73,10 @@
   },
   "comparison": {
     "kicker": "Perbandingan",
-    "title": "UniText vs TextMesh Pro",
+    "title": "UniText vs TMP vs UI Toolkit",
     "subtitle": "Perbandingan ciri bersebelahan",
     "feature": "Ciri",
-    "status": { "full": "Sokongan penuh", "limited": "Terhad", "basic": "Asas", "plugin": "Perlu plugin", "none": "Tidak disokong" },
+    "status": { "full": "Sokongan penuh", "limited": "Terhad *", "basic": "Asas", "plugin": "Perlu plugin", "none": "Tidak disokong" },
     "features": {
       "bidi": "Algoritma BiDi (UAX #9)",
       "arabic": "Shaping Arab",
@@ -86,7 +86,8 @@
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
       "parallel": "Pemprosesan selari"
-    }
+    },
+    "footnote_uitk": "* UI Toolkit: memerlukan Unity 6+ dengan Advanced Text Generator diaktifkan"
   },
   "footer": { "rights": "Hak cipta terpelihara.", "privacy": "Privasi" }
 }

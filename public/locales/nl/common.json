@@ -45,8 +45,8 @@
   },
   "benchmarks": {
     "kicker": "Prestaties",
-    "title": "3-14× sneller dan TMP",
-    "subtitle": "Echte benchmarks op Android. 100 objecten, elk 1000+ tekens.",
+    "title": "Benchmark Vergelijking",
+    "subtitle": "Echte benchmarks op Android productie-build.",
     "speed": "Snelheidsvergelijking",
     "memory": "Geheugen & GC",
     "creation": "Object aanmaken",
@@ -54,11 +54,11 @@
     "layoutAuto": "Layout (AutoSize)",
     "mesh": "Mesh rebuild",
     "faster": "sneller",
-    "gc_cycles": "GC-cycli (100 objecten aanmaken)",
+    "gc_cycles": "GC-cycli (aanmaken)",
     "fewer_gc": "minder GC-cycli",
-    "memory_usage": "Geheugengebruik",
+    "memory_usage": "Geheugentoewijzing (aanmaken)",
     "less_memory": "minder geheugen",
-    "note": "* Benchmarks: Android productie-build, 100 tekstobjecten, elk 1000 tekens"
+    "note": "* 100 objecten, 10 iteraties, 3 warmup, ~2300 tekens per object (Lorem ipsum + Arabisch + Hebreeuws + Gemengd). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Conformiteit",
@@ -73,10 +73,10 @@
   },
   "comparison": {
     "kicker": "Vergelijking",
-    "title": "UniText vs TextMesh Pro",
+    "title": "UniText vs TMP vs UI Toolkit",
     "subtitle": "Functievergelijking naast elkaar",
     "feature": "Functie",
-    "status": { "full": "Volledige ondersteuning", "limited": "Beperkt", "basic": "Basis", "plugin": "Plugin vereist", "none": "Niet ondersteund" },
+    "status": { "full": "Volledige ondersteuning", "limited": "Beperkt *", "basic": "Basis", "plugin": "Plugin vereist", "none": "Niet ondersteund" },
     "features": {
       "bidi": "BiDi Algoritme (UAX #9)",
       "arabic": "Arabische shaping",
@@ -86,7 +86,8 @@
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
       "parallel": "Parallelle verwerking"
-    }
+    },
+    "footnote_uitk": "* UI Toolkit: vereist Unity 6+ met Advanced Text Generator ingeschakeld"
   },
   "footer": { "rights": "Alle rechten voorbehouden.", "privacy": "Privacy" }
 }

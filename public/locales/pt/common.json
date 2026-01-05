@@ -45,8 +45,8 @@
   },
   "benchmarks": {
     "kicker": "Desempenho",
-    "title": "3-14× mais rápido que TMP",
-    "subtitle": "Benchmarks reais no Android. 100 objetos, 1000+ caracteres cada.",
+    "title": "Comparação de Benchmarks",
+    "subtitle": "Benchmarks reais em build de produção Android.",
     "speed": "Comparação de velocidade",
     "memory": "Memória e GC",
     "creation": "Criação de objetos",
@@ -54,11 +54,11 @@
     "layoutAuto": "Layout (AutoSize)",
     "mesh": "Rebuild de mesh",
     "faster": "mais rápido",
-    "gc_cycles": "Ciclos GC (criação de 100 objetos)",
+    "gc_cycles": "Ciclos GC (criação)",
     "fewer_gc": "menos ciclos GC",
-    "memory_usage": "Uso de memória",
+    "memory_usage": "Alocação de memória (criação)",
     "less_memory": "menos memória",
-    "note": "* Benchmarks: Build de produção Android, 100 objetos de texto, 1000 caracteres cada"
+    "note": "* 100 objetos, 10 iterações, 3 warmup, ~2300 caracteres por objeto (Lorem ipsum + Árabe + Hebraico + Misto). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Conformidade",
@@ -73,10 +73,10 @@
   },
   "comparison": {
     "kicker": "Comparação",
-    "title": "UniText vs TextMesh Pro",
+    "title": "UniText vs TMP vs UI Toolkit",
     "subtitle": "Comparação de recursos lado a lado",
     "feature": "Recurso",
-    "status": { "full": "Suporte completo", "limited": "Limitado", "basic": "Básico", "plugin": "Requer plugin", "none": "Não suportado" },
+    "status": { "full": "Suporte completo", "limited": "Limitado *", "basic": "Básico", "plugin": "Requer plugin", "none": "Não suportado" },
     "features": {
       "bidi": "Algoritmo BiDi (UAX #9)",
       "arabic": "Shaping árabe",
@@ -86,7 +86,8 @@
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
       "parallel": "Processamento paralelo"
-    }
+    },
+    "footnote_uitk": "* UI Toolkit: requer Unity 6+ com Advanced Text Generator habilitado"
   },
   "footer": { "rights": "Todos os direitos reservados.", "privacy": "Privacidade" }
 }

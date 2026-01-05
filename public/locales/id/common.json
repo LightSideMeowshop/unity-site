@@ -45,8 +45,8 @@
   },
   "benchmarks": {
     "kicker": "Performa",
-    "title": "3-14× lebih cepat dari TMP",
-    "subtitle": "Benchmark nyata di Android. 100 objek, masing-masing 1000+ karakter.",
+    "title": "Perbandingan Benchmark",
+    "subtitle": "Benchmark nyata pada build produksi Android.",
     "speed": "Perbandingan kecepatan",
     "memory": "Memori & GC",
     "creation": "Pembuatan objek",
@@ -54,11 +54,11 @@
     "layoutAuto": "Layout (AutoSize)",
     "mesh": "Rebuild mesh",
     "faster": "lebih cepat",
-    "gc_cycles": "Siklus GC (pembuatan 100 objek)",
+    "gc_cycles": "Siklus GC (pembuatan)",
     "fewer_gc": "lebih sedikit siklus GC",
-    "memory_usage": "Penggunaan memori",
+    "memory_usage": "Alokasi memori (pembuatan)",
     "less_memory": "lebih sedikit memori",
-    "note": "* Benchmark: Build produksi Android, 100 objek teks, masing-masing 1000 karakter"
+    "note": "* 100 objek, 10 iterasi, 3 warmup, ~2300 karakter per objek (Lorem ipsum + Arab + Ibrani + Campuran). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Kepatuhan",
@@ -73,10 +73,10 @@
   },
   "comparison": {
     "kicker": "Perbandingan",
-    "title": "UniText vs TextMesh Pro",
+    "title": "UniText vs TMP vs UI Toolkit",
     "subtitle": "Perbandingan fitur berdampingan",
     "feature": "Fitur",
-    "status": { "full": "Dukungan penuh", "limited": "Terbatas", "basic": "Dasar", "plugin": "Perlu plugin", "none": "Tidak didukung" },
+    "status": { "full": "Dukungan penuh", "limited": "Terbatas *", "basic": "Dasar", "plugin": "Perlu plugin", "none": "Tidak didukung" },
     "features": {
       "bidi": "Algoritma BiDi (UAX #9)",
       "arabic": "Shaping Arab",
@@ -86,7 +86,8 @@
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
       "parallel": "Pemrosesan paralel"
-    }
+    },
+    "footnote_uitk": "* UI Toolkit: memerlukan Unity 6+ dengan Advanced Text Generator diaktifkan"
   },
   "footer": { "rights": "Hak cipta dilindungi.", "privacy": "Privasi" }
 }

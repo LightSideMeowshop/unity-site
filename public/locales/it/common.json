@@ -45,8 +45,8 @@
   },
   "benchmarks": {
     "kicker": "Prestazioni",
-    "title": "3-14× più veloce di TMP",
-    "subtitle": "Benchmark reali su Android. 100 oggetti, 1000+ caratteri ciascuno.",
+    "title": "Confronto Benchmark",
+    "subtitle": "Benchmark reali su build di produzione Android.",
     "speed": "Confronto velocità",
     "memory": "Memoria e GC",
     "creation": "Creazione oggetti",
@@ -54,11 +54,11 @@
     "layoutAuto": "Layout (AutoSize)",
     "mesh": "Rebuild mesh",
     "faster": "più veloce",
-    "gc_cycles": "Cicli GC (creazione 100 oggetti)",
+    "gc_cycles": "Cicli GC (creazione)",
     "fewer_gc": "meno cicli GC",
-    "memory_usage": "Uso memoria",
+    "memory_usage": "Allocazione memoria (creazione)",
     "less_memory": "meno memoria",
-    "note": "* Benchmark: Build produzione Android, 100 oggetti testo, 1000 caratteri ciascuno"
+    "note": "* 100 oggetti, 10 iterazioni, 3 warmup, ~2300 caratteri per oggetto (Lorem ipsum + Arabo + Ebraico + Misto). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Conformità",
@@ -73,10 +73,10 @@
   },
   "comparison": {
     "kicker": "Confronto",
-    "title": "UniText vs TextMesh Pro",
+    "title": "UniText vs TMP vs UI Toolkit",
     "subtitle": "Confronto funzionalità fianco a fianco",
     "feature": "Funzionalità",
-    "status": { "full": "Supporto completo", "limited": "Limitato", "basic": "Base", "plugin": "Richiede plugin", "none": "Non supportato" },
+    "status": { "full": "Supporto completo", "limited": "Limitato *", "basic": "Base", "plugin": "Richiede plugin", "none": "Non supportato" },
     "features": {
       "bidi": "Algoritmo BiDi (UAX #9)",
       "arabic": "Shaping arabo",
@@ -86,7 +86,8 @@
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
       "parallel": "Elaborazione parallela"
-    }
+    },
+    "footnote_uitk": "* UI Toolkit: richiede Unity 6+ con Advanced Text Generator abilitato"
   },
   "footer": { "rights": "Tutti i diritti riservati.", "privacy": "Privacy" }
 }

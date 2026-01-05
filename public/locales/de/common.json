@@ -63,8 +63,8 @@
   },
   "benchmarks": {
     "kicker": "Leistung",
-    "title": "3-14× schneller als TMP",
-    "subtitle": "Echte Benchmarks auf Android. 100 Objekte, je 1000+ Zeichen.",
+    "title": "Benchmark-Vergleich",
+    "subtitle": "Echte Benchmarks auf Android Production Build.",
     "speed": "Geschwindigkeitsvergleich",
     "memory": "Speicher & GC",
     "creation": "Objekterstellung",
@@ -72,11 +72,11 @@
     "layoutAuto": "Layout (AutoSize)",
     "mesh": "Mesh Rebuild",
     "faster": "schneller",
-    "gc_cycles": "GC-Zyklen (Erstellung von 100 Objekten)",
+    "gc_cycles": "GC-Zyklen (Erstellung)",
     "fewer_gc": "weniger GC-Zyklen",
-    "memory_usage": "Speicherverbrauch",
+    "memory_usage": "Speicherzuweisung (Erstellung)",
     "less_memory": "weniger Speicher",
-    "note": "* Benchmarks: Android Production Build, 100 Textobjekte, je 1000 Zeichen"
+    "note": "* 100 Objekte, 10 Iterationen, 3 Warmup, ~2300 Zeichen pro Objekt (Lorem ipsum + Arabisch + Hebräisch + Gemischt). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Konformität",
@@ -91,12 +91,12 @@
   },
   "comparison": {
     "kicker": "Vergleich",
-    "title": "UniText vs TextMesh Pro",
+    "title": "UniText vs TMP vs UI Toolkit",
     "subtitle": "Funktionsvergleich Seite an Seite",
     "feature": "Funktion",
     "status": {
       "full": "Volle Unterstützung",
-      "limited": "Eingeschränkt",
+      "limited": "Eingeschränkt *",
       "basic": "Basis",
       "plugin": "Plugin erforderlich",
       "none": "Nicht unterstützt"
@@ -110,7 +110,8 @@
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
       "parallel": "Parallele Verarbeitung"
-    }
+    },
+    "footnote_uitk": "* UI Toolkit: erfordert Unity 6+ mit aktiviertem Advanced Text Generator"
   },
   "footer": {
     "rights": "Alle Rechte vorbehalten.",
