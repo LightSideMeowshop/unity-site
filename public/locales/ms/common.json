@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "features": "Ciri-ciri",
+    "performance": "Prestasi",
+    "platforms": "Platform",
+    "comparison": "Perbandingan"
+  },
+  "hero": {
+    "badge": "Enjin Unicode Industri",
+    "title_1": "Pemaparan teks",
+    "title_2": "Dilakukan dengan betul",
+    "subtitle": "Satu-satunya penyelesaian teks Unity dengan pematuhan Unicode 17.0 penuh. HarfBuzz shaping, 150+ bahasa, seni bina zero-allocation. 3-14× lebih pantas daripada TextMesh Pro."
+  },
+  "stats": {
+    "languages": "Bahasa disokong",
+    "faster": "Lebih pantas daripada TMP",
+    "unicode": "Pematuhan Unicode",
+    "gc": "Peruntukan GC dalam runtime"
+  },
+  "cta": {
+    "get_started": "Mulakan",
+    "learn_more": "Ketahui lebih lanjut",
+    "title": "Bersedia untuk menyokong semua bahasa?",
+    "subtitle": "Berhenti berjuang dengan Arab rosak, emoji hilang, dan bug RTL. UniText mengendalikan semuanya.",
+    "asset_store": "Unity Asset Store",
+    "documentation": "Dokumentasi",
+    "contact": "Soalan?"
+  },
+  "problem": {
+    "kicker": "Masalahnya",
+    "title": "1.8 bilion pengguna terlupa",
+    "subtitle": "TextMesh Pro tidak dapat memaparkan dengan betul Arab, Ibrani, Hindi, dan banyak skrip lain.",
+    "users_affected": "Pengguna yang bahasanya tidak dapat dipaparkan dengan betul oleh TextMesh Pro"
+  },
+  "features": {
+    "kicker": "Ciri-ciri",
+    "title": "Semua yang anda perlukan",
+    "subtitle": "Dibina di atas standard industri yang digunakan oleh Chrome, Firefox, Adobe, dan Android.",
+    "harfbuzz": { "title": "HarfBuzz Shaping", "desc": "Enjin shaping teks yang sama dengan Chrome, Firefox, Adobe InDesign, dan Android." },
+    "unicode": { "title": "100% patuh Unicode", "desc": "Lulus semua 121,516 ujian pematuhan Unicode rasmi." },
+    "zeroalloc": { "title": "Zero-Allocation", "desc": "Sistem pooling tersuai dengan 95%+ kadar hit. Tiada lonjakan GC." },
+    "parallel": { "title": "Pemprosesan selari", "desc": "Pemprosesan teks berbilang thread untuk prestasi maksimum." },
+    "emoji": { "title": "Emoji berwarna", "desc": "Sokongan emoji penuh termasuk urutan ZWJ (👨‍👩‍👧‍👦)." },
+    "modular": { "title": "Seni bina modular", "desc": "Sistem pengubah suai plug & play. Cipta pengubah suai tersuai dalam minit." }
+  },
+  "benchmarks": {
+    "kicker": "Prestasi",
+    "title": "3-14× lebih pantas daripada TMP",
+    "subtitle": "Penanda aras sebenar di Android. 100 objek, setiap satu 1000+ aksara.",
+    "speed": "Perbandingan kelajuan",
+    "memory": "Memori & GC",
+    "creation": "Penciptaan objek",
+    "rebuild": "Rebuild penuh",
+    "layoutAuto": "Layout (AutoSize)",
+    "mesh": "Rebuild mesh",
+    "faster": "lebih pantas",
+    "gc_cycles": "Kitaran GC (penciptaan 100 objek)",
+    "fewer_gc": "kurang kitaran GC",
+    "memory_usage": "Penggunaan memori",
+    "less_memory": "kurang memori",
+    "note": "* Penanda aras: Build pengeluaran Android, 100 objek teks, setiap satu 1000 aksara"
+  },
+  "unicode": {
+    "kicker": "Pematuhan",
+    "title": "100% Unicode Conformance",
+    "subtitle": "Kami lulus setiap ujian Unicode rasmi. Tiada pengecualian.",
+    "version_note": "Standard Unicode terkini (2024) — sentiasa terkini"
+  },
+  "platforms": {
+    "kicker": "Merentas platform",
+    "title": "Semua platform",
+    "subtitle": "Perpustakaan asli HarfBuzz dan FreeType untuk semua platform utama."
+  },
+  "comparison": {
+    "kicker": "Perbandingan",
+    "title": "UniText vs TextMesh Pro",
+    "subtitle": "Perbandingan ciri bersebelahan",
+    "feature": "Ciri",
+    "status": { "full": "Sokongan penuh", "limited": "Terhad", "basic": "Asas", "plugin": "Perlu plugin", "none": "Tidak disokong" },
+    "features": {
+      "bidi": "Algoritma BiDi (UAX #9)",
+      "arabic": "Shaping Arab",
+      "hebrew": "Sokongan Ibrani",
+      "hindi": "Hindi / Devanagari",
+      "emoji": "Emoji berwarna",
+      "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
+      "zeroalloc": "Zero-Allocation",
+      "parallel": "Pemprosesan selari"
+    }
+  },
+  "footer": { "rights": "Hak cipta terpelihara.", "privacy": "Privasi" }
+}

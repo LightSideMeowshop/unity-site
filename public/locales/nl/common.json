@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "features": "Functies",
+    "performance": "Prestaties",
+    "platforms": "Platforms",
+    "comparison": "Vergelijking"
+  },
+  "hero": {
+    "badge": "Industriële Unicode-engine",
+    "title_1": "Tekstweergave",
+    "title_2": "Goed gedaan",
+    "subtitle": "De enige Unity-tekstoplossing met volledige Unicode 17.0-conformiteit. HarfBuzz-shaping, 150+ talen, zero-allocation architectuur. 3-14× sneller dan TextMesh Pro."
+  },
+  "stats": {
+    "languages": "Ondersteunde talen",
+    "faster": "Sneller dan TMP",
+    "unicode": "Unicode-conformiteit",
+    "gc": "GC-allocaties in runtime"
+  },
+  "cta": {
+    "get_started": "Aan de slag",
+    "learn_more": "Meer informatie",
+    "title": "Klaar om elke taal te ondersteunen?",
+    "subtitle": "Stop met vechten tegen kapot Arabisch, ontbrekende emoji en RTL-bugs. UniText regelt alles.",
+    "asset_store": "Unity Asset Store",
+    "documentation": "Documentatie",
+    "contact": "Vragen?"
+  },
+  "problem": {
+    "kicker": "Het probleem",
+    "title": "1,8 miljard gebruikers vergeten",
+    "subtitle": "TextMesh Pro kan Arabisch, Hebreeuws, Hindi en vele andere scripts niet correct weergeven.",
+    "users_affected": "Gebruikers wiens talen TextMesh Pro niet correct kan weergeven"
+  },
+  "features": {
+    "kicker": "Functies",
+    "title": "Alles wat je nodig hebt",
+    "subtitle": "Gebouwd op industriestandaarden gebruikt door Chrome, Firefox, Adobe en Android.",
+    "harfbuzz": { "title": "HarfBuzz Shaping", "desc": "Dezelfde text shaping-engine als Chrome, Firefox, Adobe InDesign en Android." },
+    "unicode": { "title": "100% Unicode-conform", "desc": "Slaagt voor alle 121.516 officiële Unicode-conformiteitstests." },
+    "zeroalloc": { "title": "Zero-Allocation", "desc": "Aangepast pooling-systeem met 95%+ hit rate. Geen GC-pieken." },
+    "parallel": { "title": "Parallelle verwerking", "desc": "Multi-threaded tekstverwerking voor maximale prestaties." },
+    "emoji": { "title": "Kleur-emoji", "desc": "Volledige emoji-ondersteuning inclusief ZWJ-sequenties (👨‍👩‍👧‍👦)." },
+    "modular": { "title": "Modulaire architectuur", "desc": "Plug & play modificatorsysteem. Maak aangepaste modificatoren in minuten." }
+  },
+  "benchmarks": {
+    "kicker": "Prestaties",
+    "title": "3-14× sneller dan TMP",
+    "subtitle": "Echte benchmarks op Android. 100 objecten, elk 1000+ tekens.",
+    "speed": "Snelheidsvergelijking",
+    "memory": "Geheugen & GC",
+    "creation": "Object aanmaken",
+    "rebuild": "Volledige rebuild",
+    "layoutAuto": "Layout (AutoSize)",
+    "mesh": "Mesh rebuild",
+    "faster": "sneller",
+    "gc_cycles": "GC-cycli (100 objecten aanmaken)",
+    "fewer_gc": "minder GC-cycli",
+    "memory_usage": "Geheugengebruik",
+    "less_memory": "minder geheugen",
+    "note": "* Benchmarks: Android productie-build, 100 tekstobjecten, elk 1000 tekens"
+  },
+  "unicode": {
+    "kicker": "Conformiteit",
+    "title": "100% Unicode Conformance",
+    "subtitle": "We slagen voor elke officiële Unicode-test. Zonder uitzonderingen.",
+    "version_note": "Nieuwste Unicode-standaard (2024) — altijd actueel"
+  },
+  "platforms": {
+    "kicker": "Cross-platform",
+    "title": "Alle platforms",
+    "subtitle": "Native HarfBuzz- en FreeType-bibliotheken voor alle belangrijke platforms."
+  },
+  "comparison": {
+    "kicker": "Vergelijking",
+    "title": "UniText vs TextMesh Pro",
+    "subtitle": "Functievergelijking naast elkaar",
+    "feature": "Functie",
+    "status": { "full": "Volledige ondersteuning", "limited": "Beperkt", "basic": "Basis", "plugin": "Plugin vereist", "none": "Niet ondersteund" },
+    "features": {
+      "bidi": "BiDi Algoritme (UAX #9)",
+      "arabic": "Arabische shaping",
+      "hebrew": "Hebreeuwse ondersteuning",
+      "hindi": "Hindi / Devanagari",
+      "emoji": "Kleur-emoji",
+      "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
+      "zeroalloc": "Zero-Allocation",
+      "parallel": "Parallelle verwerking"
+    }
+  },
+  "footer": { "rights": "Alle rechten voorbehouden.", "privacy": "Privacy" }
+}

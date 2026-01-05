@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "features": "Características",
+    "performance": "Rendimiento",
+    "platforms": "Plataformas",
+    "comparison": "Comparación"
+  },
+  "hero": {
+    "badge": "Motor Unicode Industrial",
+    "title_1": "Renderizado de texto",
+    "title_2": "Bien hecho",
+    "subtitle": "La única solución de texto para Unity con soporte completo de Unicode 17.0. Shaping HarfBuzz, 150+ idiomas, arquitectura zero-allocation. 3-14× más rápido que TextMesh Pro."
+  },
+  "stats": {
+    "languages": "Idiomas soportados",
+    "faster": "Más rápido que TMP",
+    "unicode": "Compatibilidad Unicode",
+    "gc": "Asignaciones GC en runtime"
+  },
+  "cta": {
+    "get_started": "Comenzar",
+    "learn_more": "Saber más",
+    "title": "¿Listo para soportar todos los idiomas?",
+    "subtitle": "Deja de luchar con árabe roto, emoji faltantes y bugs RTL. UniText lo maneja todo.",
+    "asset_store": "Unity Asset Store",
+    "documentation": "Documentación",
+    "contact": "¿Preguntas?"
+  },
+  "problem": {
+    "kicker": "El problema",
+    "title": "1.800 millones de usuarios olvidados",
+    "subtitle": "TextMesh Pro no puede renderizar correctamente árabe, hebreo, hindi y muchos otros scripts.",
+    "users_affected": "Usuarios cuyos idiomas TextMesh Pro no puede mostrar correctamente"
+  },
+  "features": {
+    "kicker": "Características",
+    "title": "Todo lo que necesitas",
+    "subtitle": "Construido sobre estándares industriales usados por Chrome, Firefox, Adobe y Android.",
+    "harfbuzz": {
+      "title": "Shaping HarfBuzz",
+      "desc": "El mismo motor de shaping usado por Chrome, Firefox, Adobe InDesign y Android."
+    },
+    "unicode": {
+      "title": "100% compatible con Unicode",
+      "desc": "Pasa todas las 121.516 pruebas oficiales de conformidad Unicode."
+    },
+    "zeroalloc": {
+      "title": "Zero-Allocation",
+      "desc": "Sistema de pooling personalizado con 95%+ de aciertos. Sin picos de GC."
+    },
+    "parallel": {
+      "title": "Procesamiento paralelo",
+      "desc": "Procesamiento de texto multi-hilo para máximo rendimiento."
+    },
+    "emoji": {
+      "title": "Emoji a color",
+      "desc": "Soporte completo de emoji incluyendo secuencias ZWJ (👨‍👩‍👧‍👦)."
+    },
+    "modular": {
+      "title": "Arquitectura modular",
+      "desc": "Sistema de modificadores plug & play. Crea modificadores personalizados en minutos."
+    }
+  },
+  "benchmarks": {
+    "kicker": "Rendimiento",
+    "title": "3-14× más rápido que TMP",
+    "subtitle": "Benchmarks reales en Android. 100 objetos, 1000+ caracteres cada uno.",
+    "speed": "Comparación de velocidad",
+    "memory": "Memoria y GC",
+    "creation": "Creación de objetos",
+    "rebuild": "Rebuild completo",
+    "layoutAuto": "Layout (AutoSize)",
+    "mesh": "Rebuild de mesh",
+    "faster": "más rápido",
+    "gc_cycles": "Ciclos GC (creación de 100 objetos)",
+    "fewer_gc": "menos ciclos GC",
+    "memory_usage": "Uso de memoria",
+    "less_memory": "menos memoria",
+    "note": "* Benchmarks: Build de producción Android, 100 objetos de texto, 1000 caracteres cada uno"
+  },
+  "unicode": {
+    "kicker": "Conformidad",
+    "title": "100% Unicode Conformance",
+    "subtitle": "Pasamos cada prueba oficial de Unicode. Sin excepciones.",
+    "version_note": "Último estándar Unicode (2024) — siempre actualizado"
+  },
+  "platforms": {
+    "kicker": "Multiplataforma",
+    "title": "Todas las plataformas",
+    "subtitle": "Bibliotecas nativas HarfBuzz y FreeType para todas las plataformas principales."
+  },
+  "comparison": {
+    "kicker": "Comparación",
+    "title": "UniText vs TextMesh Pro",
+    "subtitle": "Comparación de características lado a lado",
+    "feature": "Característica",
+    "status": {
+      "full": "Soporte completo",
+      "limited": "Limitado",
+      "basic": "Básico",
+      "plugin": "Requiere plugin",
+      "none": "No soportado"
+    },
+    "features": {
+      "bidi": "Algoritmo BiDi (UAX #9)",
+      "arabic": "Shaping árabe",
+      "hebrew": "Soporte hebreo",
+      "hindi": "Hindi / Devanagari",
+      "emoji": "Emoji a color",
+      "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
+      "zeroalloc": "Zero-Allocation",
+      "parallel": "Procesamiento paralelo"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de privacidad"
+  }
+}

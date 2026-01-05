@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "features": "Fonctionnalités",
+    "performance": "Performance",
+    "platforms": "Plateformes",
+    "comparison": "Comparaison"
+  },
+  "hero": {
+    "badge": "Moteur Unicode industriel",
+    "title_1": "Rendu de texte",
+    "title_2": "Bien fait",
+    "subtitle": "La seule solution de texte Unity avec conformité Unicode 17.0 complète. Shaping HarfBuzz, 150+ langues, architecture zero-allocation. 3-14× plus rapide que TextMesh Pro."
+  },
+  "stats": {
+    "languages": "Langues supportées",
+    "faster": "Plus rapide que TMP",
+    "unicode": "Conformité Unicode",
+    "gc": "Allocations GC en runtime"
+  },
+  "cta": {
+    "get_started": "Commencer",
+    "learn_more": "En savoir plus",
+    "title": "Prêt à supporter toutes les langues?",
+    "subtitle": "Arrêtez de lutter avec l'arabe cassé, les emoji manquants et les bugs RTL. UniText gère tout.",
+    "asset_store": "Unity Asset Store",
+    "documentation": "Documentation",
+    "contact": "Questions?"
+  },
+  "problem": {
+    "kicker": "Le problème",
+    "title": "1,8 milliard d'utilisateurs oubliés",
+    "subtitle": "TextMesh Pro ne peut pas correctement afficher l'arabe, l'hébreu, l'hindi et de nombreuses autres écritures.",
+    "users_affected": "Utilisateurs dont les langues ne peuvent pas être correctement affichées par TextMesh Pro"
+  },
+  "features": {
+    "kicker": "Fonctionnalités",
+    "title": "Tout ce dont vous avez besoin",
+    "subtitle": "Construit sur des standards industriels utilisés par Chrome, Firefox, Adobe et Android.",
+    "harfbuzz": {
+      "title": "Shaping HarfBuzz",
+      "desc": "Le même moteur de shaping utilisé par Chrome, Firefox, Adobe InDesign et Android."
+    },
+    "unicode": {
+      "title": "100% conforme Unicode",
+      "desc": "Réussit les 121 516 tests officiels de conformité Unicode."
+    },
+    "zeroalloc": {
+      "title": "Zero-Allocation",
+      "desc": "Système de pooling personnalisé avec 95%+ de taux de succès. Pas de pics GC."
+    },
+    "parallel": {
+      "title": "Traitement parallèle",
+      "desc": "Traitement de texte multi-thread pour une performance maximale."
+    },
+    "emoji": {
+      "title": "Emoji couleur",
+      "desc": "Support complet des emoji incluant les séquences ZWJ (👨‍👩‍👧‍👦)."
+    },
+    "modular": {
+      "title": "Architecture modulaire",
+      "desc": "Système de modificateurs plug & play. Créez des modificateurs personnalisés en minutes."
+    }
+  },
+  "benchmarks": {
+    "kicker": "Performance",
+    "title": "3-14× plus rapide que TMP",
+    "subtitle": "Benchmarks réels sur Android. 100 objets, 1000+ caractères chacun.",
+    "speed": "Comparaison de vitesse",
+    "memory": "Mémoire et GC",
+    "creation": "Création d'objets",
+    "rebuild": "Rebuild complet",
+    "layoutAuto": "Layout (AutoSize)",
+    "mesh": "Rebuild de mesh",
+    "faster": "plus rapide",
+    "gc_cycles": "Cycles GC (création de 100 objets)",
+    "fewer_gc": "moins de cycles GC",
+    "memory_usage": "Utilisation mémoire",
+    "less_memory": "moins de mémoire",
+    "note": "* Benchmarks: Build de production Android, 100 objets texte, 1000 caractères chacun"
+  },
+  "unicode": {
+    "kicker": "Conformité",
+    "title": "100% Unicode Conformance",
+    "subtitle": "Nous réussissons chaque test officiel Unicode. Sans exception.",
+    "version_note": "Dernier standard Unicode (2024) — toujours à jour"
+  },
+  "platforms": {
+    "kicker": "Multiplateforme",
+    "title": "Toutes les plateformes",
+    "subtitle": "Bibliothèques natives HarfBuzz et FreeType pour toutes les principales plateformes."
+  },
+  "comparison": {
+    "kicker": "Comparaison",
+    "title": "UniText vs TextMesh Pro",
+    "subtitle": "Comparaison des fonctionnalités côte à côte",
+    "feature": "Fonctionnalité",
+    "status": {
+      "full": "Support complet",
+      "limited": "Limité",
+      "basic": "Basique",
+      "plugin": "Plugin requis",
+      "none": "Non supporté"
+    },
+    "features": {
+      "bidi": "Algorithme BiDi (UAX #9)",
+      "arabic": "Shaping arabe",
+      "hebrew": "Support hébreu",
+      "hindi": "Hindi / Devanagari",
+      "emoji": "Emoji couleur",
+      "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
+      "zeroalloc": "Zero-Allocation",
+      "parallel": "Traitement parallèle"
+    }
+  },
+  "footer": {
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de confidentialité"
+  }
+}

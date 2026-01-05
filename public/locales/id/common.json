@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "features": "Fitur",
+    "performance": "Performa",
+    "platforms": "Platform",
+    "comparison": "Perbandingan"
+  },
+  "hero": {
+    "badge": "Mesin Unicode Industri",
+    "title_1": "Rendering teks",
+    "title_2": "Yang benar",
+    "subtitle": "Satu-satunya solusi teks Unity dengan kepatuhan Unicode 17.0 penuh. Shaping HarfBuzz, 150+ bahasa, arsitektur zero-allocation. 3-14× lebih cepat dari TextMesh Pro."
+  },
+  "stats": {
+    "languages": "Bahasa didukung",
+    "faster": "Lebih cepat dari TMP",
+    "unicode": "Kepatuhan Unicode",
+    "gc": "Alokasi GC saat runtime"
+  },
+  "cta": {
+    "get_started": "Mulai",
+    "learn_more": "Pelajari lebih lanjut",
+    "title": "Siap mendukung semua bahasa?",
+    "subtitle": "Berhenti berjuang dengan Arabic rusak, emoji hilang, dan bug RTL. UniText menangani semuanya.",
+    "asset_store": "Unity Asset Store",
+    "documentation": "Dokumentasi",
+    "contact": "Pertanyaan?"
+  },
+  "problem": {
+    "kicker": "Masalahnya",
+    "title": "1,8 miliar pengguna terlupakan",
+    "subtitle": "TextMesh Pro tidak dapat merender dengan benar Arab, Ibrani, Hindi, dan banyak skrip lainnya.",
+    "users_affected": "Pengguna yang bahasanya tidak dapat ditampilkan dengan benar oleh TextMesh Pro"
+  },
+  "features": {
+    "kicker": "Fitur",
+    "title": "Semua yang Anda butuhkan",
+    "subtitle": "Dibangun di atas standar industri yang digunakan oleh Chrome, Firefox, Adobe, dan Android.",
+    "harfbuzz": { "title": "Shaping HarfBuzz", "desc": "Mesin shaping teks yang sama dengan Chrome, Firefox, Adobe InDesign, dan Android." },
+    "unicode": { "title": "100% sesuai Unicode", "desc": "Lulus semua 121.516 tes kepatuhan Unicode resmi." },
+    "zeroalloc": { "title": "Zero-Allocation", "desc": "Sistem pooling kustom dengan 95%+ hit rate. Tanpa lonjakan GC." },
+    "parallel": { "title": "Pemrosesan paralel", "desc": "Pemrosesan teks multi-thread untuk performa maksimal." },
+    "emoji": { "title": "Emoji berwarna", "desc": "Dukungan emoji penuh termasuk urutan ZWJ (👨‍👩‍👧‍👦)." },
+    "modular": { "title": "Arsitektur modular", "desc": "Sistem modifier plug & play. Buat modifier kustom dalam hitungan menit." }
+  },
+  "benchmarks": {
+    "kicker": "Performa",
+    "title": "3-14× lebih cepat dari TMP",
+    "subtitle": "Benchmark nyata di Android. 100 objek, masing-masing 1000+ karakter.",
+    "speed": "Perbandingan kecepatan",
+    "memory": "Memori & GC",
+    "creation": "Pembuatan objek",
+    "rebuild": "Rebuild penuh",
+    "layoutAuto": "Layout (AutoSize)",
+    "mesh": "Rebuild mesh",
+    "faster": "lebih cepat",
+    "gc_cycles": "Siklus GC (pembuatan 100 objek)",
+    "fewer_gc": "lebih sedikit siklus GC",
+    "memory_usage": "Penggunaan memori",
+    "less_memory": "lebih sedikit memori",
+    "note": "* Benchmark: Build produksi Android, 100 objek teks, masing-masing 1000 karakter"
+  },
+  "unicode": {
+    "kicker": "Kepatuhan",
+    "title": "100% Unicode Conformance",
+    "subtitle": "Kami lulus setiap tes Unicode resmi. Tanpa pengecualian.",
+    "version_note": "Standar Unicode terbaru (2024) — selalu terkini"
+  },
+  "platforms": {
+    "kicker": "Lintas platform",
+    "title": "Semua platform",
+    "subtitle": "Library native HarfBuzz dan FreeType untuk semua platform utama."
+  },
+  "comparison": {
+    "kicker": "Perbandingan",
+    "title": "UniText vs TextMesh Pro",
+    "subtitle": "Perbandingan fitur berdampingan",
+    "feature": "Fitur",
+    "status": { "full": "Dukungan penuh", "limited": "Terbatas", "basic": "Dasar", "plugin": "Perlu plugin", "none": "Tidak didukung" },
+    "features": {
+      "bidi": "Algoritma BiDi (UAX #9)",
+      "arabic": "Shaping Arab",
+      "hebrew": "Dukungan Ibrani",
+      "hindi": "Hindi / Devanagari",
+      "emoji": "Emoji berwarna",
+      "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
+      "zeroalloc": "Zero-Allocation",
+      "parallel": "Pemrosesan paralel"
+    }
+  },
+  "footer": { "rights": "Hak cipta dilindungi.", "privacy": "Privasi" }
+}

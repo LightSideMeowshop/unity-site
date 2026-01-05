@@ -1,0 +1,119 @@
+{
+  "nav": {
+    "features": "Features",
+    "performance": "Performance",
+    "platforms": "Platforms",
+    "comparison": "Comparison"
+  },
+  "hero": {
+    "badge": "Industrial-Grade Unicode Engine",
+    "title_1": "Text Rendering",
+    "title_2": "Done Right",
+    "subtitle": "The only Unity text solution with full Unicode 17.0 compliance. HarfBuzz shaping, 150+ languages, zero-allocation architecture. 3-14× faster than TextMesh Pro."
+  },
+  "stats": {
+    "languages": "Languages supported",
+    "faster": "Faster than TMP",
+    "unicode": "Unicode compliance",
+    "gc": "GC allocations in runtime"
+  },
+  "cta": {
+    "get_started": "Get Started",
+    "learn_more": "Learn More",
+    "title": "Ready to support every language?",
+    "subtitle": "Stop fighting with broken Arabic, missing emoji, and RTL bugs. UniText handles it all.",
+    "asset_store": "Unity Asset Store",
+    "documentation": "Documentation",
+    "contact": "Questions?"
+  },
+  "problem": {
+    "kicker": "The Problem",
+    "title": "1.8 Billion Users Left Behind",
+    "subtitle": "TextMesh Pro cannot correctly render Arabic, Hebrew, Hindi, and many other scripts. These aren't edge cases — they're a quarter of the world's population.",
+    "users_affected": "Users whose languages TextMesh Pro cannot correctly display"
+  },
+  "features": {
+    "kicker": "Features",
+    "title": "Everything You Need",
+    "subtitle": "Built on industry-standard technologies used by Chrome, Firefox, Adobe, and Android.",
+    "harfbuzz": {
+      "title": "HarfBuzz Shaping",
+      "desc": "The same text shaping engine used by Chrome, Firefox, Adobe InDesign, and Android. Perfect Arabic, Hebrew, Hindi, and 30+ complex scripts."
+    },
+    "unicode": {
+      "title": "100% Unicode Compliant",
+      "desc": "Passes all 121,516 official Unicode conformance tests. UAX #9 BiDi, UAX #14 Line Breaking, UAX #29 Grapheme Clusters."
+    },
+    "zeroalloc": {
+      "title": "Zero-Allocation",
+      "desc": "Custom pooling system with 95%+ hit rate. No GC spikes, no frame drops. After warmup: 0 garbage collections."
+    },
+    "parallel": {
+      "title": "Parallel Processing",
+      "desc": "Multi-threaded text processing for maximum performance. Utilize all available CPU cores."
+    },
+    "emoji": {
+      "title": "Color Emoji",
+      "desc": "Full emoji support including ZWJ sequences (👨‍👩‍👧‍👦). Uses system fonts — zero build size impact."
+    },
+    "modular": {
+      "title": "Modular Architecture",
+      "desc": "Plug & play modifiers system. Add only what you need. Create custom modifiers in minutes."
+    }
+  },
+  "benchmarks": {
+    "kicker": "Performance",
+    "title": "3-14× Faster Than TMP",
+    "subtitle": "Real benchmarks on Android. 100 objects, 1000+ characters each.",
+    "speed": "Speed Comparison",
+    "memory": "Memory & GC",
+    "creation": "Object Creation",
+    "rebuild": "Full Rebuild",
+    "layoutAuto": "Layout (AutoSize)",
+    "mesh": "Mesh Rebuild",
+    "faster": "faster",
+    "gc_cycles": "GC Cycles (100 objects creation)",
+    "fewer_gc": "fewer GC cycles",
+    "memory_usage": "Memory Usage",
+    "less_memory": "less memory",
+    "note": "* Benchmarks: Android production build, 100 text objects, 1000 characters each, UniText.UseParallel = false"
+  },
+  "unicode": {
+    "kicker": "Compliance",
+    "title": "100% Unicode Conformance",
+    "subtitle": "We pass every single official Unicode test. No exceptions.",
+    "version_note": "Latest Unicode standard (2024) — always up to date"
+  },
+  "platforms": {
+    "kicker": "Cross-Platform",
+    "title": "All Platforms Supported",
+    "subtitle": "Native HarfBuzz and FreeType libraries for every major platform."
+  },
+  "comparison": {
+    "kicker": "Comparison",
+    "title": "UniText vs TextMesh Pro",
+    "subtitle": "Side-by-side feature comparison",
+    "feature": "Feature",
+    "status": {
+      "full": "Full support",
+      "limited": "Limited",
+      "basic": "Basic",
+      "plugin": "Requires plugin",
+      "none": "Not supported"
+    },
+    "features": {
+      "bidi": "BiDi Algorithm (UAX #9)",
+      "arabic": "Arabic Shaping",
+      "hebrew": "Hebrew Support",
+      "hindi": "Hindi / Devanagari",
+      "emoji": "Color Emoji",
+      "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
+      "zeroalloc": "Zero-Allocation",
+      "parallel": "Parallel Processing"
+    }
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy"
+  }
+}

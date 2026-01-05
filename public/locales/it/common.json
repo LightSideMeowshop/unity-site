@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "features": "Funzionalità",
+    "performance": "Prestazioni",
+    "platforms": "Piattaforme",
+    "comparison": "Confronto"
+  },
+  "hero": {
+    "badge": "Motore Unicode industriale",
+    "title_1": "Rendering del testo",
+    "title_2": "Fatto bene",
+    "subtitle": "L'unica soluzione di testo per Unity con piena conformità Unicode 17.0. Shaping HarfBuzz, 150+ lingue, architettura zero-allocation. 3-14× più veloce di TextMesh Pro."
+  },
+  "stats": {
+    "languages": "Lingue supportate",
+    "faster": "Più veloce di TMP",
+    "unicode": "Conformità Unicode",
+    "gc": "Allocazioni GC in runtime"
+  },
+  "cta": {
+    "get_started": "Inizia",
+    "learn_more": "Scopri di più",
+    "title": "Pronto a supportare ogni lingua?",
+    "subtitle": "Smetti di lottare con arabo rotto, emoji mancanti e bug RTL. UniText gestisce tutto.",
+    "asset_store": "Unity Asset Store",
+    "documentation": "Documentazione",
+    "contact": "Domande?"
+  },
+  "problem": {
+    "kicker": "Il problema",
+    "title": "1,8 miliardi di utenti dimenticati",
+    "subtitle": "TextMesh Pro non può renderizzare correttamente arabo, ebraico, hindi e molti altri script.",
+    "users_affected": "Utenti le cui lingue TextMesh Pro non può visualizzare correttamente"
+  },
+  "features": {
+    "kicker": "Funzionalità",
+    "title": "Tutto ciò di cui hai bisogno",
+    "subtitle": "Costruito su standard industriali usati da Chrome, Firefox, Adobe e Android.",
+    "harfbuzz": { "title": "Shaping HarfBuzz", "desc": "Lo stesso motore di shaping usato da Chrome, Firefox, Adobe InDesign e Android." },
+    "unicode": { "title": "100% conforme Unicode", "desc": "Supera tutti i 121.516 test ufficiali di conformità Unicode." },
+    "zeroalloc": { "title": "Zero-Allocation", "desc": "Sistema di pooling personalizzato con 95%+ di hit rate. Nessun picco GC." },
+    "parallel": { "title": "Elaborazione parallela", "desc": "Elaborazione testo multi-thread per prestazioni massime." },
+    "emoji": { "title": "Emoji a colori", "desc": "Supporto completo emoji incluse sequenze ZWJ (👨‍👩‍👧‍👦)." },
+    "modular": { "title": "Architettura modulare", "desc": "Sistema modificatori plug & play. Crea modificatori personalizzati in minuti." }
+  },
+  "benchmarks": {
+    "kicker": "Prestazioni",
+    "title": "3-14× più veloce di TMP",
+    "subtitle": "Benchmark reali su Android. 100 oggetti, 1000+ caratteri ciascuno.",
+    "speed": "Confronto velocità",
+    "memory": "Memoria e GC",
+    "creation": "Creazione oggetti",
+    "rebuild": "Rebuild completo",
+    "layoutAuto": "Layout (AutoSize)",
+    "mesh": "Rebuild mesh",
+    "faster": "più veloce",
+    "gc_cycles": "Cicli GC (creazione 100 oggetti)",
+    "fewer_gc": "meno cicli GC",
+    "memory_usage": "Uso memoria",
+    "less_memory": "meno memoria",
+    "note": "* Benchmark: Build produzione Android, 100 oggetti testo, 1000 caratteri ciascuno"
+  },
+  "unicode": {
+    "kicker": "Conformità",
+    "title": "100% Unicode Conformance",
+    "subtitle": "Superiamo ogni test ufficiale Unicode. Senza eccezioni.",
+    "version_note": "Ultimo standard Unicode (2024) — sempre aggiornato"
+  },
+  "platforms": {
+    "kicker": "Multipiattaforma",
+    "title": "Tutte le piattaforme",
+    "subtitle": "Librerie native HarfBuzz e FreeType per tutte le principali piattaforme."
+  },
+  "comparison": {
+    "kicker": "Confronto",
+    "title": "UniText vs TextMesh Pro",
+    "subtitle": "Confronto funzionalità fianco a fianco",
+    "feature": "Funzionalità",
+    "status": { "full": "Supporto completo", "limited": "Limitato", "basic": "Base", "plugin": "Richiede plugin", "none": "Non supportato" },
+    "features": {
+      "bidi": "Algoritmo BiDi (UAX #9)",
+      "arabic": "Shaping arabo",
+      "hebrew": "Supporto ebraico",
+      "hindi": "Hindi / Devanagari",
+      "emoji": "Emoji a colori",
+      "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
+      "zeroalloc": "Zero-Allocation",
+      "parallel": "Elaborazione parallela"
+    }
+  },
+  "footer": { "rights": "Tutti i diritti riservati.", "privacy": "Privacy" }
+}

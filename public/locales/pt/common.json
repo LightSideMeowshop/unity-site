@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "features": "Recursos",
+    "performance": "Desempenho",
+    "platforms": "Plataformas",
+    "comparison": "Comparação"
+  },
+  "hero": {
+    "badge": "Motor Unicode Industrial",
+    "title_1": "Renderização de texto",
+    "title_2": "Feita direito",
+    "subtitle": "A única solução de texto para Unity com conformidade total Unicode 17.0. Shaping HarfBuzz, 150+ idiomas, arquitetura zero-allocation. 3-14× mais rápido que TextMesh Pro."
+  },
+  "stats": {
+    "languages": "Idiomas suportados",
+    "faster": "Mais rápido que TMP",
+    "unicode": "Conformidade Unicode",
+    "gc": "Alocações GC em runtime"
+  },
+  "cta": {
+    "get_started": "Começar",
+    "learn_more": "Saiba mais",
+    "title": "Pronto para suportar todos os idiomas?",
+    "subtitle": "Pare de lutar com árabe quebrado, emoji faltando e bugs RTL. UniText cuida de tudo.",
+    "asset_store": "Unity Asset Store",
+    "documentation": "Documentação",
+    "contact": "Dúvidas?"
+  },
+  "problem": {
+    "kicker": "O problema",
+    "title": "1,8 bilhão de usuários esquecidos",
+    "subtitle": "TextMesh Pro não consegue renderizar corretamente árabe, hebraico, hindi e muitos outros scripts.",
+    "users_affected": "Usuários cujos idiomas o TextMesh Pro não consegue exibir corretamente"
+  },
+  "features": {
+    "kicker": "Recursos",
+    "title": "Tudo que você precisa",
+    "subtitle": "Construído sobre padrões industriais usados por Chrome, Firefox, Adobe e Android.",
+    "harfbuzz": { "title": "Shaping HarfBuzz", "desc": "O mesmo motor de shaping usado por Chrome, Firefox, Adobe InDesign e Android." },
+    "unicode": { "title": "100% compatível Unicode", "desc": "Passa em todos os 121.516 testes oficiais de conformidade Unicode." },
+    "zeroalloc": { "title": "Zero-Allocation", "desc": "Sistema de pooling personalizado com 95%+ de taxa de acerto. Sem picos de GC." },
+    "parallel": { "title": "Processamento paralelo", "desc": "Processamento de texto multi-thread para máximo desempenho." },
+    "emoji": { "title": "Emoji colorido", "desc": "Suporte completo a emoji incluindo sequências ZWJ (👨‍👩‍👧‍👦)." },
+    "modular": { "title": "Arquitetura modular", "desc": "Sistema de modificadores plug & play. Crie modificadores personalizados em minutos." }
+  },
+  "benchmarks": {
+    "kicker": "Desempenho",
+    "title": "3-14× mais rápido que TMP",
+    "subtitle": "Benchmarks reais no Android. 100 objetos, 1000+ caracteres cada.",
+    "speed": "Comparação de velocidade",
+    "memory": "Memória e GC",
+    "creation": "Criação de objetos",
+    "rebuild": "Rebuild completo",
+    "layoutAuto": "Layout (AutoSize)",
+    "mesh": "Rebuild de mesh",
+    "faster": "mais rápido",
+    "gc_cycles": "Ciclos GC (criação de 100 objetos)",
+    "fewer_gc": "menos ciclos GC",
+    "memory_usage": "Uso de memória",
+    "less_memory": "menos memória",
+    "note": "* Benchmarks: Build de produção Android, 100 objetos de texto, 1000 caracteres cada"
+  },
+  "unicode": {
+    "kicker": "Conformidade",
+    "title": "100% Unicode Conformance",
+    "subtitle": "Passamos em todos os testes oficiais Unicode. Sem exceções.",
+    "version_note": "Último padrão Unicode (2024) — sempre atualizado"
+  },
+  "platforms": {
+    "kicker": "Multiplataforma",
+    "title": "Todas as plataformas",
+    "subtitle": "Bibliotecas nativas HarfBuzz e FreeType para todas as principais plataformas."
+  },
+  "comparison": {
+    "kicker": "Comparação",
+    "title": "UniText vs TextMesh Pro",
+    "subtitle": "Comparação de recursos lado a lado",
+    "feature": "Recurso",
+    "status": { "full": "Suporte completo", "limited": "Limitado", "basic": "Básico", "plugin": "Requer plugin", "none": "Não suportado" },
+    "features": {
+      "bidi": "Algoritmo BiDi (UAX #9)",
+      "arabic": "Shaping árabe",
+      "hebrew": "Suporte hebraico",
+      "hindi": "Hindi / Devanagari",
+      "emoji": "Emoji colorido",
+      "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
+      "zeroalloc": "Zero-Allocation",
+      "parallel": "Processamento paralelo"
+    }
+  },
+  "footer": { "rights": "Todos os direitos reservados.", "privacy": "Privacidade" }
+}

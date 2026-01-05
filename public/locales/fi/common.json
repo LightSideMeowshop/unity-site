@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "features": "Ominaisuudet",
+    "performance": "Suorituskyky",
+    "platforms": "Alustat",
+    "comparison": "Vertailu"
+  },
+  "hero": {
+    "badge": "Teollinen Unicode-moottori",
+    "title_1": "Tekstin renderöinti",
+    "title_2": "Oikein tehty",
+    "subtitle": "Ainoa Unity-tekstiratkaisu täydellä Unicode 17.0 -yhteensopivuudella. HarfBuzz-muotoilu, 150+ kieltä, zero-allocation-arkkitehtuuri. 3-14× nopeampi kuin TextMesh Pro."
+  },
+  "stats": {
+    "languages": "Tuettua kieltä",
+    "faster": "Nopeampi kuin TMP",
+    "unicode": "Unicode-yhteensopivuus",
+    "gc": "GC-varauksia ajonaikana"
+  },
+  "cta": {
+    "get_started": "Aloita",
+    "learn_more": "Lue lisää",
+    "title": "Valmis tukemaan kaikkia kieliä?",
+    "subtitle": "Lopeta taistelu rikkoutuneen arabian, puuttuvien emojien ja RTL-bugien kanssa. UniText hoitaa kaiken.",
+    "asset_store": "Unity Asset Store",
+    "documentation": "Dokumentaatio",
+    "contact": "Kysymyksiä?"
+  },
+  "problem": {
+    "kicker": "Ongelma",
+    "title": "1,8 miljardia käyttäjää unohdettu",
+    "subtitle": "TextMesh Pro ei pysty renderöimään oikein arabiaa, hepreaa, hindiä ja monia muita kirjoitusjärjestelmiä.",
+    "users_affected": "Käyttäjää, joiden kieliä TextMesh Pro ei pysty näyttämään oikein"
+  },
+  "features": {
+    "kicker": "Ominaisuudet",
+    "title": "Kaikki mitä tarvitset",
+    "subtitle": "Rakennettu teollisuusstandardeille, joita käyttävät Chrome, Firefox, Adobe ja Android.",
+    "harfbuzz": { "title": "HarfBuzz-muotoilu", "desc": "Sama tekstinmuotoilumoottori kuin Chrome, Firefox, Adobe InDesign ja Android." },
+    "unicode": { "title": "100% Unicode-yhteensopiva", "desc": "Läpäisee kaikki 121 516 virallista Unicode-yhteensopivuustestiä." },
+    "zeroalloc": { "title": "Zero-Allocation", "desc": "Mukautettu pooling-järjestelmä 95%+ osumalla. Ei GC-piikkejä." },
+    "parallel": { "title": "Rinnakkaiskäsittely", "desc": "Monisäikeinen tekstinkäsittely maksimaalisen suorituskyvyn saavuttamiseksi." },
+    "emoji": { "title": "Värilliset emojit", "desc": "Täysi emoji-tuki mukaan lukien ZWJ-sekvenssit (👨‍👩‍👧‍👦)." },
+    "modular": { "title": "Modulaarinen arkkitehtuuri", "desc": "Plug & play -modifioijajärjestelmä. Luo mukautettuja modifioijia minuuteissa." }
+  },
+  "benchmarks": {
+    "kicker": "Suorituskyky",
+    "title": "3-14× nopeampi kuin TMP",
+    "subtitle": "Todelliset suorituskykytestit Androidilla. 100 objektia, 1000+ merkkiä kukin.",
+    "speed": "Nopeusvertailu",
+    "memory": "Muisti ja GC",
+    "creation": "Objektien luonti",
+    "rebuild": "Täysi rebuild",
+    "layoutAuto": "Layout (AutoSize)",
+    "mesh": "Mesh rebuild",
+    "faster": "nopeampi",
+    "gc_cycles": "GC-sykliä (100 objektin luonti)",
+    "fewer_gc": "vähemmän GC-syklejä",
+    "memory_usage": "Muistin käyttö",
+    "less_memory": "vähemmän muistia",
+    "note": "* Suorituskykytestit: Android-tuotantobuild, 100 tekstiobjektia, 1000 merkkiä kukin"
+  },
+  "unicode": {
+    "kicker": "Yhteensopivuus",
+    "title": "100% Unicode Conformance",
+    "subtitle": "Läpäisemme jokaisen virallisen Unicode-testin. Ei poikkeuksia.",
+    "version_note": "Uusin Unicode-standardi (2024) — aina ajan tasalla"
+  },
+  "platforms": {
+    "kicker": "Monialustainen",
+    "title": "Kaikki alustat",
+    "subtitle": "Natiivit HarfBuzz- ja FreeType-kirjastot kaikille tärkeimmille alustoille."
+  },
+  "comparison": {
+    "kicker": "Vertailu",
+    "title": "UniText vs TextMesh Pro",
+    "subtitle": "Ominaisuuksien vertailu vierekkäin",
+    "feature": "Ominaisuus",
+    "status": { "full": "Täysi tuki", "limited": "Rajoitettu", "basic": "Perus", "plugin": "Vaatii pluginin", "none": "Ei tuettu" },
+    "features": {
+      "bidi": "BiDi-algoritmi (UAX #9)",
+      "arabic": "Arabian muotoilu",
+      "hebrew": "Heprean tuki",
+      "hindi": "Hindi / Devanagari",
+      "emoji": "Värilliset emojit",
+      "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
+      "zeroalloc": "Zero-Allocation",
+      "parallel": "Rinnakkaiskäsittely"
+    }
+  },
+  "footer": { "rights": "Kaikki oikeudet pidätetään.", "privacy": "Tietosuoja" }
+}

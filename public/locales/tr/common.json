@@ -1,0 +1,92 @@
+{
+  "nav": {
+    "features": "Özellikler",
+    "performance": "Performans",
+    "platforms": "Platformlar",
+    "comparison": "Karşılaştırma"
+  },
+  "hero": {
+    "badge": "Endüstriyel Unicode Motoru",
+    "title_1": "Metin oluşturma",
+    "title_2": "Doğru yapıldı",
+    "subtitle": "Tam Unicode 17.0 uyumluluğuna sahip tek Unity metin çözümü. HarfBuzz şekillendirme, 150+ dil, zero-allocation mimarisi. TextMesh Pro'dan 3-14× daha hızlı."
+  },
+  "stats": {
+    "languages": "Desteklenen dil",
+    "faster": "TMP'den daha hızlı",
+    "unicode": "Unicode uyumluluğu",
+    "gc": "Çalışma zamanında GC tahsisi"
+  },
+  "cta": {
+    "get_started": "Başlayın",
+    "learn_more": "Daha fazla bilgi",
+    "title": "Tüm dilleri desteklemeye hazır mısınız?",
+    "subtitle": "Bozuk Arapça, eksik emoji ve RTL hatalarıyla mücadeleyi bırakın. UniText her şeyi halleder.",
+    "asset_store": "Unity Asset Store",
+    "documentation": "Dokümantasyon",
+    "contact": "Sorular?"
+  },
+  "problem": {
+    "kicker": "Sorun",
+    "title": "1,8 milyar kullanıcı unutuldu",
+    "subtitle": "TextMesh Pro, Arapça, İbranice, Hintçe ve diğer birçok yazıyı doğru şekilde oluşturamaz.",
+    "users_affected": "TextMesh Pro'nun doğru görüntüleyemediği dilleri konuşan kullanıcı"
+  },
+  "features": {
+    "kicker": "Özellikler",
+    "title": "İhtiyacınız olan her şey",
+    "subtitle": "Chrome, Firefox, Adobe ve Android tarafından kullanılan endüstri standartları üzerine inşa edildi.",
+    "harfbuzz": { "title": "HarfBuzz Şekillendirme", "desc": "Chrome, Firefox, Adobe InDesign ve Android ile aynı metin şekillendirme motoru." },
+    "unicode": { "title": "100% Unicode uyumlu", "desc": "Tüm 121.516 resmi Unicode uyumluluk testini geçer." },
+    "zeroalloc": { "title": "Zero-Allocation", "desc": "95%+ isabet oranına sahip özel havuzlama sistemi. GC artışı yok." },
+    "parallel": { "title": "Paralel işleme", "desc": "Maksimum performans için çok iş parçacıklı metin işleme." },
+    "emoji": { "title": "Renkli emoji", "desc": "ZWJ dizileri dahil tam emoji desteği (👨‍👩‍👧‍👦)." },
+    "modular": { "title": "Modüler mimari", "desc": "Plug & play değiştirici sistemi. Dakikalar içinde özel değiştiriciler oluşturun." }
+  },
+  "benchmarks": {
+    "kicker": "Performans",
+    "title": "TMP'den 3-14× daha hızlı",
+    "subtitle": "Android'de gerçek kıyaslamalar. 100 nesne, her biri 1000+ karakter.",
+    "speed": "Hız karşılaştırması",
+    "memory": "Bellek ve GC",
+    "creation": "Nesne oluşturma",
+    "rebuild": "Tam yeniden oluşturma",
+    "layoutAuto": "Düzen (AutoSize)",
+    "mesh": "Mesh yeniden oluşturma",
+    "faster": "daha hızlı",
+    "gc_cycles": "GC döngüsü (100 nesne oluşturma)",
+    "fewer_gc": "daha az GC döngüsü",
+    "memory_usage": "Bellek kullanımı",
+    "less_memory": "daha az bellek",
+    "note": "* Kıyaslamalar: Android üretim yapısı, 100 metin nesnesi, her biri 1000 karakter"
+  },
+  "unicode": {
+    "kicker": "Uyumluluk",
+    "title": "100% Unicode Conformance",
+    "subtitle": "Her resmi Unicode testini geçiyoruz. İstisna yok.",
+    "version_note": "En son Unicode standardı (2024) — her zaman güncel"
+  },
+  "platforms": {
+    "kicker": "Çapraz platform",
+    "title": "Tüm platformlar",
+    "subtitle": "Tüm büyük platformlar için yerel HarfBuzz ve FreeType kütüphaneleri."
+  },
+  "comparison": {
+    "kicker": "Karşılaştırma",
+    "title": "UniText vs TextMesh Pro",
+    "subtitle": "Yan yana özellik karşılaştırması",
+    "feature": "Özellik",
+    "status": { "full": "Tam destek", "limited": "Sınırlı", "basic": "Temel", "plugin": "Eklenti gerekli", "none": "Desteklenmiyor" },
+    "features": {
+      "bidi": "BiDi Algoritması (UAX #9)",
+      "arabic": "Arapça şekillendirme",
+      "hebrew": "İbranice desteği",
+      "hindi": "Hintçe / Devanagari",
+      "emoji": "Renkli emoji",
+      "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
+      "zeroalloc": "Zero-Allocation",
+      "parallel": "Paralel işleme"
+    }
+  },
+  "footer": { "rights": "Tüm hakları saklıdır.", "privacy": "Gizlilik" }
+}
