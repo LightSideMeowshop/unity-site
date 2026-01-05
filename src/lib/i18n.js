@@ -21,7 +21,7 @@ export async function initI18n(options = {}) {
     fallbackLng: 'en',
     supportedLngs: SUPPORTED_LANGUAGES,
     nonExplicitSupportedLngs: true,
-    load: 'currentOnly',
+    load: 'languageOnly',
     ns: [namespace],
     defaultNS: namespace,
     backend: {
