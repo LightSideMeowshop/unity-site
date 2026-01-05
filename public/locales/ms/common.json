@@ -51,14 +51,16 @@
     "memory": "Memori & GC",
     "creation": "Penciptaan objek",
     "rebuild": "Rebuild penuh",
-    "layoutAuto": "Layout (AutoSize)",
+    "layout": "Layout",
     "mesh": "Rebuild mesh",
     "faster": "lebih pantas",
     "gc_cycles": "Kitaran GC (penciptaan)",
     "fewer_gc": "kurang kitaran GC",
     "memory_usage": "Peruntukan memori (penciptaan)",
     "less_memory": "kurang memori",
-    "note": "* 100 objek, 10 iterasi, 3 warmup, ~2300 aksara setiap objek (Lorem ipsum + Arab + Ibrani + Campuran). UniText.UseParallel = false."
+    "runtime_alloc": "Peruntukan runtime (per operasi)",
+    "more": "lebih banyak",
+    "note": "* 100 objek, 10 iterasi, 3 warmup, ~2300 aksara setiap objek (Latin + Arab + Ibrani + Campuran). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Pematuhan",
@@ -85,7 +87,8 @@
       "emoji": "Emoji berwarna",
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
-      "parallel": "Pemprosesan selari"
+      "parallel": "Pemprosesan selari",
+      "unicode_version": "Versi Unicode"
     },
     "footnote_uitk": "* UI Toolkit: memerlukan Unity 6+ dengan Advanced Text Generator diaktifkan"
   },

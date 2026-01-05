@@ -51,14 +51,16 @@
     "memory": "Bellek ve GC",
     "creation": "Nesne oluşturma",
     "rebuild": "Tam yeniden oluşturma",
-    "layoutAuto": "Düzen (AutoSize)",
+    "layout": "Layout",
     "mesh": "Mesh yeniden oluşturma",
     "faster": "daha hızlı",
     "gc_cycles": "GC döngüsü (oluşturma)",
     "fewer_gc": "daha az GC döngüsü",
     "memory_usage": "Bellek tahsisi (oluşturma)",
     "less_memory": "daha az bellek",
-    "note": "* 100 nesne, 10 iterasyon, 3 warmup, nesne başına ~2300 karakter (Lorem ipsum + Arapça + İbranice + Karışık). UniText.UseParallel = false."
+    "runtime_alloc": "Çalışma zamanı tahsisleri (işlem başına)",
+    "more": "daha fazla",
+    "note": "* 100 nesne, 10 iterasyon, 3 warmup, nesne başına ~2300 karakter (Latin + Arapça + İbranice + Karışık). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Uyumluluk",
@@ -85,7 +87,8 @@
       "emoji": "Renkli emoji",
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
-      "parallel": "Paralel işleme"
+      "parallel": "Paralel işleme",
+      "unicode_version": "Unicode Sürümü"
     },
     "footnote_uitk": "* UI Toolkit: Advanced Text Generator etkinleştirilmiş Unity 6+ gerektirir"
   },

@@ -51,14 +51,16 @@
     "memory": "Muisti ja GC",
     "creation": "Objektien luonti",
     "rebuild": "Täysi rebuild",
-    "layoutAuto": "Layout (AutoSize)",
+    "layout": "Layout",
     "mesh": "Mesh rebuild",
     "faster": "nopeampi",
     "gc_cycles": "GC-sykliä (luonti)",
     "fewer_gc": "vähemmän GC-syklejä",
     "memory_usage": "Muistin varaus (luonti)",
     "less_memory": "vähemmän muistia",
-    "note": "* 100 objektia, 10 iteraatiota, 3 warmup, ~2300 merkkiä per objekti (Lorem ipsum + Arabia + Heprea + Sekoitettu). UniText.UseParallel = false."
+    "runtime_alloc": "Ajonaikaiset varaukset (per operaatio)",
+    "more": "enemmän",
+    "note": "* 100 objektia, 10 iteraatiota, 3 warmup, ~2300 merkkiä per objekti (Latin + Arabia + Heprea + Sekoitettu). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Yhteensopivuus",
@@ -85,7 +87,8 @@
       "emoji": "Värilliset emojit",
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
-      "parallel": "Rinnakkaiskäsittely"
+      "parallel": "Rinnakkaiskäsittely",
+      "unicode_version": "Unicode-versio"
     },
     "footnote_uitk": "* UI Toolkit: vaatii Unity 6+ ja Advanced Text Generator käytössä"
   },

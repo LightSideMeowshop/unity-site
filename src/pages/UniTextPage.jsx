@@ -32,11 +32,12 @@ import { useI18n } from '../hooks/useI18n';
 import { useScrollHide } from '../hooks/useScrollHide';
 import { LangDropdown } from '../components/LangDropdown';
 
-// Benchmark data (100 objects)
+// Benchmark data (100 objects, Android build)
+// Layout values are averages of 4 cases: Wrap ON/OFF × AutoSize ON/OFF
 const BENCHMARKS = {
   creation: { unitext: 217, tmp: 579, uitk: 458 },
   rebuild: { unitext: 83, tmp: 288, uitk: 75 },
-  layoutAuto: { unitext: 67, tmp: 842, uitk: 50 },
+  layout: { unitext: 29, tmp: 297, uitk: 52 },
   mesh: { unitext: 25, tmp: 150, uitk: 25 },
 };
 
@@ -44,6 +45,13 @@ const GC_DATA = {
   unitext: { cycles: 2, memory: 298 },
   tmp: { cycles: 46, memory: 618 },
   uitk: { cycles: 54, memory: 1219 },
+};
+
+// Runtime allocations per operation (Layout/Rebuild)
+const RUNTIME_ALLOC = {
+  unitext: { value: '~500 B', multiplier: null },
+  tmp: { value: '~1.5 KB', multiplier: '×3' },
+  uitk: { value: '~100 MB', multiplier: '×200,000' },
 };
 
 // Unicode compliance data
@@ -416,6 +424,27 @@ export function UniTextPage() {
                   </div>
                 </div>
               </div>
+
+              {/* Runtime Allocations */}
+              <div>
+                <div className="text-sm mb-3">{t('benchmarks.runtime_alloc')}</div>
+                <div className="flex gap-3">
+                  <div className="flex-1 p-4 rounded-xl bg-green-500/10 border border-green-500/30 text-center">
+                    <div className="text-2xl font-bold text-green-400">{RUNTIME_ALLOC.unitext.value}</div>
+                    <div className="text-xs text-white/50 mt-1">UniText</div>
+                  </div>
+                  <div className="flex-1 p-4 rounded-xl bg-yellow-500/10 border border-yellow-500/30 text-center">
+                    <div className="text-2xl font-bold text-yellow-400">{RUNTIME_ALLOC.tmp.value}</div>
+                    <div className="text-xs text-white/50 mt-1">TMP</div>
+                    <div className="text-xs text-yellow-400/70 mt-1">{RUNTIME_ALLOC.tmp.multiplier} {t('benchmarks.more')}</div>
+                  </div>
+                  <div className="flex-1 p-4 rounded-xl bg-red-500/10 border border-red-500/30 text-center">
+                    <div className="text-2xl font-bold text-red-400">{RUNTIME_ALLOC.uitk.value}</div>
+                    <div className="text-xs text-white/50 mt-1">UI Toolkit</div>
+                    <div className="text-xs text-red-400/70 mt-1">{RUNTIME_ALLOC.uitk.multiplier} {t('benchmarks.more')}</div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -526,6 +555,22 @@ export function UniTextPage() {
                   </td>
                 </tr>
               ))}
+              {/* Unicode version row */}
+              <tr className="border-b border-white/5 hover:bg-white/5">
+                <td className="py-4 px-4">{t('comparison.features.unicode_version')}</td>
+                <td className="py-4 px-4 text-center">
+                  <span className="text-lg font-bold text-green-400">17.0</span>
+                </td>
+                <td className="py-4 px-4 text-center">
+                  <div className="flex items-center justify-center gap-2">
+                    <StatusIcon status="none" />
+                    <span className="text-sm text-white/70">{t('comparison.status.none')}</span>
+                  </div>
+                </td>
+                <td className="py-4 px-4 text-center">
+                  <span className="text-lg font-bold text-yellow-400">15.0</span>
+                </td>
+              </tr>
             </tbody>
           </table>
         </div>

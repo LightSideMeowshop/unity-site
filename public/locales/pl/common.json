@@ -51,14 +51,16 @@
     "memory": "Pamięć i GC",
     "creation": "Tworzenie obiektów",
     "rebuild": "Pełny rebuild",
-    "layoutAuto": "Layout (AutoSize)",
+    "layout": "Layout",
     "mesh": "Rebuild mesh",
     "faster": "szybciej",
     "gc_cycles": "Cykli GC (tworzenie)",
     "fewer_gc": "mniej cykli GC",
     "memory_usage": "Alokacja pamięci (tworzenie)",
     "less_memory": "mniej pamięci",
-    "note": "* 100 obiektów, 10 iteracji, 3 warmup, ~2300 znaków na obiekt (Lorem ipsum + Arabski + Hebrajski + Mieszany). UniText.UseParallel = false."
+    "runtime_alloc": "Alokacje runtime (na operację)",
+    "more": "więcej",
+    "note": "* 100 obiektów, 10 iteracji, 3 warmup, ~2300 znaków na obiekt (Latin + Arabski + Hebrajski + Mieszany). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Zgodność",
@@ -85,7 +87,8 @@
       "emoji": "Kolorowe emoji",
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
-      "parallel": "Przetwarzanie równoległe"
+      "parallel": "Przetwarzanie równoległe",
+      "unicode_version": "Wersja Unicode"
     },
     "footnote_uitk": "* UI Toolkit: wymaga Unity 6+ z włączonym Advanced Text Generator"
   },

@@ -51,14 +51,16 @@
     "memory": "Geheugen & GC",
     "creation": "Object aanmaken",
     "rebuild": "Volledige rebuild",
-    "layoutAuto": "Layout (AutoSize)",
+    "layout": "Layout",
     "mesh": "Mesh rebuild",
     "faster": "sneller",
     "gc_cycles": "GC-cycli (aanmaken)",
     "fewer_gc": "minder GC-cycli",
     "memory_usage": "Geheugentoewijzing (aanmaken)",
     "less_memory": "minder geheugen",
-    "note": "* 100 objecten, 10 iteraties, 3 warmup, ~2300 tekens per object (Lorem ipsum + Arabisch + Hebreeuws + Gemengd). UniText.UseParallel = false."
+    "runtime_alloc": "Runtime-allocaties (per operatie)",
+    "more": "meer",
+    "note": "* 100 objecten, 10 iteraties, 3 warmup, ~2300 tekens per object (Latin + Arabisch + Hebreeuws + Gemengd). UniText.UseParallel = false."
   },
   "unicode": {
     "kicker": "Conformiteit",
@@ -85,7 +87,8 @@
       "emoji": "Kleur-emoji",
       "zwj": "ZWJ Emoji (👨‍👩‍👧‍👦)",
       "zeroalloc": "Zero-Allocation",
-      "parallel": "Parallelle verwerking"
+      "parallel": "Parallelle verwerking",
+      "unicode_version": "Unicode-versie"
     },
     "footnote_uitk": "* UI Toolkit: vereist Unity 6+ met Advanced Text Generator ingeschakeld"
   },
