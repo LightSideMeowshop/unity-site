@@ -150,9 +150,7 @@ export function UniTextPage() {
       <header className={`fixed top-0 left-0 right-0 z-50 backdrop-blur-lg bg-black/30 border-b border-white/10 transition-transform duration-300 ${headerHidden ? '-translate-y-full' : 'translate-y-0'}`}>
         <div className="mx-auto max-w-6xl px-4 py-3 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[var(--color-accent)] to-orange-600 flex items-center justify-center font-bold text-black">
-              U
-            </div>
+            <img src="/unitext/assets/unitext-logo-clear-1024.png" alt="UniText" className="w-10 h-10 rounded-xl" />
             <span className="font-bold text-lg">UniText</span>
           </div>
           <nav className="hidden md:flex items-center gap-6 text-sm">
@@ -546,9 +544,7 @@ export function UniTextPage() {
       <footer className="border-t border-white/10 py-8">
         <div className="mx-auto max-w-6xl px-4 flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[var(--color-accent)] to-orange-600 flex items-center justify-center font-bold text-black text-sm">
-              U
-            </div>
+            <img src="/unitext/assets/unitext-logo-clear-1024.png" alt="UniText" className="w-8 h-8 rounded-lg" />
             <span className="text-sm text-white/50">
               © {new Date().getFullYear()} Light Side. {t('footer.rights')}
             </span>
