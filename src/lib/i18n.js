@@ -18,10 +18,14 @@ export async function initI18n(options = {}) {
 
   await i18n.init({
     debug: import.meta.env.DEV,
-    fallbackLng: 'en',
+    fallbackLng: (code) => {
+      const lang = code?.split('-')[0];
+      const fallbacks = [lang, 'en'].filter(Boolean);
+      return [...new Set(fallbacks)];
+    },
     supportedLngs: SUPPORTED_LANGUAGES,
     nonExplicitSupportedLngs: true,
-    load: 'languageOnly',
+    load: 'currentOnly',
     ns: [namespace],
     defaultNS: namespace,
     backend: {
