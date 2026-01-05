@@ -4,9 +4,9 @@ import { resolve } from 'path';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: '/unitext/',
   build: {
-    outDir: 'dist',
+    outDir: 'dist/unitext',
     sourcemap: true,
     rollupOptions: {
       input: {

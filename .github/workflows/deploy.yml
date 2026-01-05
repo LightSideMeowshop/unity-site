@@ -33,6 +33,14 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Copy root files
+        run: |
+          cp public/CNAME dist/
+          cp public/index.html dist/
+          cp public/404.html dist/
+          cp public/robots.txt dist/
+          cp public/sitemap.xml dist/
+
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

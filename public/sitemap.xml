@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://unity.lightside.media/unitext/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://unity.lightside.media/unitext/?lng=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://unity.lightside.media/unitext/?lng=de"/>
+    <xhtml:link rel="alternate" hreflang="es" href="https://unity.lightside.media/unitext/?lng=es"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://unity.lightside.media/unitext/?lng=fr"/>
+    <xhtml:link rel="alternate" hreflang="it" href="https://unity.lightside.media/unitext/?lng=it"/>
+    <xhtml:link rel="alternate" hreflang="nl" href="https://unity.lightside.media/unitext/?lng=nl"/>
+    <xhtml:link rel="alternate" hreflang="pl" href="https://unity.lightside.media/unitext/?lng=pl"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://unity.lightside.media/unitext/?lng=pt"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://unity.lightside.media/unitext/?lng=ru"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://unity.lightside.media/unitext/?lng=tr"/>
+    <xhtml:link rel="alternate" hreflang="id" href="https://unity.lightside.media/unitext/?lng=id"/>
+    <xhtml:link rel="alternate" hreflang="ms" href="https://unity.lightside.media/unitext/?lng=ms"/>
+    <xhtml:link rel="alternate" hreflang="fi" href="https://unity.lightside.media/unitext/?lng=fi"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://unity.lightside.media/unitext/"/>
+  </url>
+</urlset>
