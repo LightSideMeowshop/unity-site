@@ -103,14 +103,14 @@ function StatusIcon({ status }) {
   return <XCircle className="w-5 h-5 text-red-400" />;
 }
 
-function BenchmarkBar({ value, max, color = 'accent' }) {
+function BenchmarkBar({ value, max, color = 'green' }) {
   const percentage = Math.min((value / max) * 100, 100);
   const colorMap = {
-    accent: 'bg-[var(--color-accent)]',
+    green: 'bg-green-500/70',
     red: 'bg-red-500/70',
     purple: 'bg-purple-500/70',
   };
-  const bgColor = colorMap[color] || colorMap.accent;
+  const bgColor = colorMap[color] || colorMap.green;
 
   return (
     <div className="h-3 bg-white/10 rounded-full overflow-hidden">
@@ -355,7 +355,7 @@ export function UniTextPage() {
                       <div className="flex items-center gap-3">
                         <span className="w-20 text-xs text-white/50">UniText</span>
                         <div className="flex-1">
-                          <BenchmarkBar value={data.unitext} max={maxVal} color="accent" />
+                          <BenchmarkBar value={data.unitext} max={maxVal} color="green" />
                         </div>
                         <span className="w-16 text-right text-xs font-mono">{data.unitext}ms</span>
                       </div>
