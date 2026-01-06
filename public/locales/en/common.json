@@ -105,6 +105,7 @@
     },
     "features": {
       "bidi": "BiDi Algorithm (UAX #9)",
+      "bidi_auto": "BiDi Auto Direction",
       "arabic": "Arabic Shaping",
       "hebrew": "Hebrew Support",
       "hindi": "Hindi / Devanagari",

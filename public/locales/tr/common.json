@@ -81,6 +81,7 @@
     "status": { "full": "Tam destek", "limited": "Sınırlı *", "basic": "Temel", "plugin": "Eklenti gerekli", "none": "Desteklenmiyor" },
     "features": {
       "bidi": "BiDi Algoritması (UAX #9)",
+      "bidi_auto": "BiDi Auto Direction",
       "arabic": "Arapça şekillendirme",
       "hebrew": "İbranice desteği",
       "hindi": "Hintçe / Devanagari",

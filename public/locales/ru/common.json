@@ -105,6 +105,7 @@
     },
     "features": {
       "bidi": "BiDi алгоритм (UAX #9)",
+      "bidi_auto": "BiDi Auto Direction",
       "arabic": "Арабский шейпинг",
       "hebrew": "Поддержка иврита",
       "hindi": "Хинди / Деванагари",

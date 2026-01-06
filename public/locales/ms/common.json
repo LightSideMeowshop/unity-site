@@ -81,6 +81,7 @@
     "status": { "full": "Sokongan penuh", "limited": "Terhad *", "basic": "Asas", "plugin": "Perlu plugin", "none": "Tidak disokong" },
     "features": {
       "bidi": "Algoritma BiDi (UAX #9)",
+      "bidi_auto": "BiDi Auto Direction",
       "arabic": "Shaping Arab",
       "hebrew": "Sokongan Ibrani",
       "hindi": "Hindi / Devanagari",

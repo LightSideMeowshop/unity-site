@@ -81,6 +81,7 @@
     "status": { "full": "Täysi tuki", "limited": "Rajoitettu *", "basic": "Perus", "plugin": "Vaatii pluginin", "none": "Ei tuettu" },
     "features": {
       "bidi": "BiDi-algoritmi (UAX #9)",
+      "bidi_auto": "BiDi Auto Direction",
       "arabic": "Arabian muotoilu",
       "hebrew": "Heprean tuki",
       "hindi": "Hindi / Devanagari",

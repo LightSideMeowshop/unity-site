@@ -67,6 +67,7 @@ const UNICODE_TESTS = [
 // But still has massive memory allocations (1.2GB for 100 objects)
 const FEATURES = [
   { key: 'bidi', unitext: 'full', tmp: 'basic', uitk: 'limited' },      // Unity 6+ only
+  { key: 'bidi_auto', unitext: 'full', tmp: 'none', uitk: 'none' },     // UI Toolkit: planned but not implemented
   { key: 'arabic', unitext: 'full', tmp: 'plugin', uitk: 'limited' },   // Unity 6+ only
   { key: 'hebrew', unitext: 'full', tmp: 'plugin', uitk: 'limited' },   // Unity 6+ only
   { key: 'hindi', unitext: 'full', tmp: 'limited', uitk: 'limited' },   // Unity 6+ only

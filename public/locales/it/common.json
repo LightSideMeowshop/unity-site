@@ -81,6 +81,7 @@
     "status": { "full": "Supporto completo", "limited": "Limitato *", "basic": "Base", "plugin": "Richiede plugin", "none": "Non supportato" },
     "features": {
       "bidi": "Algoritmo BiDi (UAX #9)",
+      "bidi_auto": "BiDi Auto Direction",
       "arabic": "Shaping arabo",
       "hebrew": "Supporto ebraico",
       "hindi": "Hindi / Devanagari",
