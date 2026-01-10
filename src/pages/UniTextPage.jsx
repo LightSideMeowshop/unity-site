@@ -28,6 +28,15 @@ function AppleLogo({ className }) {
     </svg>
   );
 }
+
+// Official Unity logo icon (Bootstrap Icons)
+function UnityLogo({ className }) {
+  return (
+    <svg className={className} viewBox="0 0 16 16" fill="currentColor">
+      <path d="M15 11.2V3.733L8.61 0v2.867l2.503 1.466c.099.067.099.2 0 .234L8.148 6.3c-.099.067-.197.033-.263 0L4.92 4.567c-.099-.034-.099-.2 0-.234l2.504-1.466V0L1 3.733V11.2v-.033.033l2.438-1.433V6.833c0-.1.131-.166.197-.133L6.6 8.433c.099.067.132.134.132.234v3.466c0 .1-.132.167-.198.134L4.031 10.8l-2.438 1.433L7.983 16l6.391-3.733-2.438-1.434L9.434 12.3c-.099.067-.198 0-.198-.133V8.7c0-.1.066-.2.132-.233l2.965-1.734c.099-.066.197 0 .197.134V9.8z"/>
+    </svg>
+  );
+}
 import { useI18n } from '../hooks/useI18n';
 import { useScrollHide } from '../hooks/useScrollHide';
 import { LangDropdown } from '../components/LangDropdown';
@@ -84,6 +93,7 @@ const PLATFORMS = [
   { name: 'Linux', archs: ['x64'], icon: Monitor },
   { name: 'Android', archs: ['ARMv7', 'ARM64', 'x86', 'x64'], icon: Smartphone },
   { name: 'iOS', archs: ['ARM64'], icon: AppleLogo },
+  { name: 'WebGL', archs: ['1.0', '2.0'], icon: Globe },
 ];
 
 // Complex scripts supported
@@ -493,21 +503,30 @@ export function UniTextPage() {
           subtitle={t('platforms.subtitle')}
         />
 
-        <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
           {PLATFORMS.map((platform) => {
             const Icon = platform.icon;
             return (
               <div key={platform.name} className="p-5 rounded-2xl bg-white/5 border border-white/10 text-center hover:border-[var(--color-accent)]/50 transition">
                 <Icon className="w-8 h-8 mx-auto text-[var(--color-accent)]" />
                 <div className="mt-3 font-semibold">{platform.name}</div>
-                <div className="mt-2 flex flex-wrap justify-center gap-1">
-                  {platform.archs.map((arch) => (
-                    <span key={arch} className="px-2 py-0.5 text-xs rounded-full bg-white/10">{arch}</span>
-                  ))}
-                </div>
+                {platform.archs.length > 0 && (
+                  <div className="mt-2 flex flex-wrap justify-center gap-1">
+                    {platform.archs.map((arch) => (
+                      <span key={arch} className="px-2 py-0.5 text-xs rounded-full bg-white/10">{arch}</span>
+                    ))}
+                  </div>
+                )}
               </div>
             );
           })}
+        </div>
+
+        <div className="mt-8 flex justify-center">
+          <div className="inline-flex items-center gap-3 px-5 py-3 rounded-2xl bg-white/5 border border-white/10">
+            <UnityLogo className="w-6 h-6 text-white/70" />
+            <span className="text-white/70">Unity 2021 LTS+</span>
+          </div>
         </div>
       </Section>
 
